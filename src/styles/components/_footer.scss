@@ -1,0 +1,102 @@
+.footer {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+
+    p {
+        clear: both;
+        color: $text2;
+        font-family: $font2;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 1.2;
+
+        span {
+            font-weight: 700;
+        }
+
+        a {
+            color: $text2;
+            font-weight: 100;
+            text-decoration: none;
+
+            &:hover {
+                color: $feature;
+            }
+        }
+    }
+
+    .footer__logomark {
+        background: url(../images/footer-logo-mark.svg) right 17px / 100px 100px no-repeat;
+        min-height: 139px;
+        position: relative;
+    }
+}
+
+.footer__logo {
+    background: url(../images/footer-logo-wordmark.svg) 0 0 no-repeat;
+    display: inline-block;
+    float: left;
+    height: 73px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-top: 17px;
+    width: 99px;
+    @include hideText;
+}
+
+.footer-links {
+    clear: left;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    li {
+        color: $text2;
+        float: left;
+        font-family: $font2;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-right: 10px;
+
+        span {
+            font-weight: 700;
+        }
+
+        a {
+            color: $text2;
+            font-weight: 100;
+            text-decoration: none;
+
+            &:hover {
+                color: $feature;
+            }
+        }
+    }
+}
+
+@include media('smallest'){
+    .footer-links {
+        position: absolute;
+        right: 200px;
+        top: 0px;
+    }
+}
+
+@include media('small-tablet'){
+    .footer {
+        .footer__logomark {
+            background: url(../images/footer-logo-mark.svg) right 15px / 132px 132px no-repeat;
+        }
+    }
+
+    .footer__logo {
+        margin-top: 40px;
+    }
+
+    .footer-links {
+        right: 150px;
+        top: 15px;
+    }
+}

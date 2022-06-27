@@ -1,0 +1,85 @@
+.header {
+    height: calc(134px + 45px);
+    padding-top: 45px;
+    position: relative;
+    z-index: 99999;
+
+    .layout__inner {
+        width: 100%;
+    }
+
+    > .layout__inner {
+        position: relative;
+        height: 134px;
+        z-index: 0;
+    }
+}
+
+.home .header {
+    height: 45px;
+}
+
+.header__fixed {
+    background: $featureFaint;
+    height: 45px;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__logo {
+    background: url(../images/Combe-Grove-Wordmarkx2.png) 0 0 / 100% auto no-repeat;
+    height: 58px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 295px;
+    @include translateXY;
+    @include hideText;
+
+    .header__logo--link {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.single,
+.error404,
+.tag,
+.category,
+.search {
+    .header {
+        background: $background;
+    }
+
+    .header__logo {
+        background: url(../images/Combe-Grove-Wordmark-2.svg) 0 0 / 100% auto no-repeat;
+    }
+}
+
+@include media('tablet'){
+    .header .layout__inner {
+        width: 790px;
+    }
+
+    .header {
+        > .layout__inner {
+            height: 114px;
+        }
+    }
+}
+
+@include media('tablet-landscape'){
+    .header .layout__inner {
+        width: 1000px;
+    }
+}
+
+@include media('desktop'){
+    .header .layout__inner {
+        width: 1270px;
+    }
+}

@@ -1,0 +1,120 @@
+.promo__wrapper {
+    //background: $backgroundTint;
+    padding-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.promo__wrapper--home {
+    padding-bottom: 0px;
+}
+
+.promo {
+    color: $background;
+    float: left;
+    display: inline-block;
+    margin: 0 0px 15px;
+    position: relative;
+    width: calc(100%);
+
+    &:hover {
+        h3 {
+            color: $green2;
+        }
+
+        // &:before {
+        //     opacity: .6;
+        // }
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+    }
+
+    h3 {
+        bottom: 15px;
+        color: $background;
+        font-size: 20px;
+        left: 15px;
+        margin-bottom: 0px;
+        position: absolute;
+        text-align: left;
+        width: calc(100% - 40px);
+        z-index: 2;
+        @include trans(color);
+    }
+
+    &:after {
+        background: url(../images/box-gradient.png) left bottom repeat-x;
+        background-size: auto 30%;
+        bottom: 0px;
+        content: "";
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        @include trans(height);
+    }
+    //
+    // &:before {
+    //     background: $feature;
+    //     bottom: 0px;
+    //     content: "";
+    //     height: 100%;
+    //     left: 0px;
+    //     opacity: 0;
+    //     position: absolute;
+    //     width: 100%;
+    //     z-index: 1;
+    //     @include trans(opacity);
+    // }
+}
+
+@include media('tiny'){
+    .promo {
+        margin: 0 7px 15px;
+        width: calc(50% - 14px);
+    }
+}
+
+@include media('mobile'){
+    .promo {
+
+        h3 {
+            font-size: 25px;
+        }
+    }
+}
+
+@include media('tablet'){
+    .promo {
+        float: none;
+        margin: 0 7px 15px;
+        width: calc(33.33% - 17px);
+
+        h3 {
+            bottom: 15px;
+            font-size: 28px;
+            left: 15px;
+        }
+
+        &:after {
+            //background-position: left bottom;
+            //height: 100%;
+        }
+    }
+}
+
+@include media('tablet-landscape'){
+    .promo {
+        //border-right: 20px solid $backgroundTint;
+        width: calc(25% - 17px);
+    }
+}

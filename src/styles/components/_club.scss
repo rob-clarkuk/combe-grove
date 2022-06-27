@@ -1,0 +1,44 @@
+.club__menu__wrapper {
+    position: relative;
+
+    &:hover {
+        a.button {
+            background: $feature;
+        }
+
+        .club__menu {
+            display: block;
+        }
+    }
+}
+
+.club__menu--HOLD {
+    background: $background;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    width: 220px;
+
+    li {
+        margin-bottom: 0px;
+        width: 100%;
+
+        a {
+            background: transparent;
+            color: $feature;
+            display: block;
+            font-family: $font3;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 10px 20px;
+            text-decoration: none;
+            @include trans(background);
+
+            &:hover {
+                background: $feature;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.breadcrumb__wrapper {
+    background: $background2;
+    display: none;
+    height: 20px;
+    padding-top: 4px;
+    width: 100%;
+}
+
+.home .breadcrumb__wrapper {
+    display: none;
+}
+
+.breadcrumb {
+    color: #fff;
+    font-family: $font3;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    a {
+        color: #4d4544;
+        text-decoration: none;
+        @include trans(color);
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// .single,
+// .tag,
+// .category,
+// .error404 {
+//     .breadcrumb {
+//         color: $feature;
+//
+//         a {
+//             &:hover {
+//                 color: $feature;
+//             }
+//         }
+//     }
+// }
+//
+// .category .breadcrumb {
+//     span {
+//         color: #fff;
+//     }
+// }
+
+@include media('tablet'){
+    .breadcrumb__wrapper {
+        display: block;
+        //margin-top: 25px;
+    }
+}

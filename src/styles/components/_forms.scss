@@ -1,0 +1,206 @@
+::-webkit-input-placeholder {color: $placeholder;}
+::-moz-placeholder {color: $placeholder;}
+:-ms-input-placeholder {color: $placeholder;}
+:-moz-placeholder {color: $placeholder;}
+
+form {
+    text-align: center; /* for centring non width specific button fields */
+}
+
+input[type="email"],
+input[type="text"] {
+    background: $background;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    height: 56px;
+    margin-bottom: 26px;
+    padding-left: 20px;
+    text-align: left;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+input[type="submit"] {
+    background: $red;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-family: $font3;
+    font-size: 20px;
+    height: 56px;
+    padding: 0 62px;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+}
+
+.gform_wrapper {
+    label {
+        color: $blue;
+        font-family: $font3;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .gfield_description {
+        color: #818A91;
+        font-family: $font2!important;
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    input[type="email"],
+    input[type="text"] {
+        background: #fff;
+        border: 1px solid $border;
+        border-radius: 5px;
+        height: 40px;
+        margin-bottom: 0px;
+        padding-left: 12px;
+        text-align: left;
+        width: 100%!important;
+    }
+
+    textarea {
+        background: #fff;
+        border: 1px solid $border;
+        border-radius: 5px;
+        height: 119px;
+        margin-bottom: 0px;
+        padding-left: 12px!important;
+        text-align: left;
+        width: 100%!important;
+    }
+
+    select {
+        background: #fff;
+        border: 1px solid $border;
+        border-radius: 5px;
+        height: 40px;
+        width: 100%!important;
+    }
+
+    .ginput_container_radio,
+    .ginput_container_checkbox {
+        label {
+            color: $text;
+            font-family: $font1;
+            font-size: 20px!important;
+            text-transform: none;
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            display: none!important;
+        }
+
+        input[type=checkbox] + label:before {
+            content: "";
+            background-color: #fff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 11px 9px;
+            border: 1px solid $border;
+            border-radius: 3px;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            padding-left: 0.2em;
+            padding-bottom: 0.3em;
+            margin-right: 0.2em;
+            vertical-align: middle;
+            color: transparent;
+            transition: .2s;
+            margin-top: -4px;
+        }
+
+        input[type=checkbox] + label:active:before {
+            transform: scale(0);
+        }
+
+        input[type=checkbox]:checked + label:before {
+            background-image: url(../images/check-box-tick.svg);
+
+        }
+
+        input[type=checkbox]:disabled + label:before {
+            transform: scale(1);
+            border-color: #aaa;
+        }
+
+        input[type=checkbox]:checked:disabled + label:before {
+            transform: scale(1);
+            background-color: #bfb;
+            border-color: #bfb;
+        }
+
+        // radio
+        input[type=radio] + label:before {
+            content: "";
+            background-color: #fff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 11px 9px;
+            border: 1px solid $border;
+            border-radius: 100%;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            padding-left: 0.2em;
+            padding-bottom: 0.3em;
+            margin-right: 0.2em;
+            vertical-align: middle;
+            color: transparent;
+            transition: .2s;
+            margin-top: -4px;
+        }
+
+        input[type=radio] + label:active:before {
+            transform: scale(0);
+        }
+
+        input[type=radio]:checked + label:before {
+            background-image: url(../images/radio-button-fill.svg);
+
+        }
+
+        input[type=radio]:disabled + label:before {
+            transform: scale(1);
+            border-color: #aaa;
+        }
+
+        input[type=radio]:checked:disabled + label:before {
+            transform: scale(1);
+            background-color: #bfb;
+            border-color: #bfb;
+        }
+    }
+
+    input[type=submit]{
+        @extend .button;
+        @extend .button__cta;
+    }
+}
+
+li.gfield {
+    margin-bottom: 20px!important;
+}
+
+.gform_wrapper .gfield_radio li label {
+    margin-left: 0px!important;
+}
+
+.gform_wrapper ul li.gfield {
+    padding-left: 0px;
+    font-size: inherit;
+}
+
+@include media('tablet'){
+    input[type="submit"] {
+        @include trans(background);
+
+        &:hover {
+            background: $highlight;
+        }
+    }
+}

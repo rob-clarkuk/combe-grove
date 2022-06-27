@@ -1,0 +1,62 @@
+.filters {
+    overflow: hidden;
+
+    li {
+        float: left;
+        margin: 0 5px;
+        width: calc(25% - 10px);
+
+        a {
+            background: transparent;
+            border: #707070 1px solid;
+            color: #747474;
+            display: block;
+            font-size: 14px;
+            height: 56px;
+            line-height: 53px;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            @include trans(background);
+
+            &:hover,
+            &.active {
+                background: $green2;
+            }
+        }
+    }
+}
+
+.page-template-page-listing-news {
+    .filters--all {
+        background: $green2;
+    }
+}
+
+.category-whats-on-in-bath {
+    .filters--whats-on {
+        background: $green2;
+    }
+}
+
+.category-news {
+    .filters--hotel {
+        background: $green2;
+    }
+}
+
+.category-club-news {
+    .filters--club {
+        background: $green2;
+    }
+}
+
+@include media('mobile'){
+    .filters {
+        li {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
