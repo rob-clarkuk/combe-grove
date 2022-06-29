@@ -1,5 +1,7 @@
 <?php get_header(); ?>
     <section class="content">
+        <?php include 'includes/banner.php'; ?>
+        
         <div class="layout__inner layout__inner--condensed content__padded content__tint content__tint--extended">
             <h1>
                 <?php
@@ -20,7 +22,5 @@
         </div>
 
         <?php include 'includes/secondary-content.php'; ?>
-
-        <?php include 'includes/banner.php'; ?>
     </section>
 <?php get_footer(); ?>
