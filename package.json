@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "gulp": "gulp watch"
+    "gulp": "gulp app"
   },
   "type": "commonjs",
   "repository": {
@@ -51,6 +51,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "browser-sync": "^2.27.10"
+    "browser-sync": "^2.27.10",
+    "gulp-minify-css": "^1.2.4"
   }
 }

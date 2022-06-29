@@ -14,7 +14,7 @@
 		<meta property="og:image:height" content="1200" />
 		<meta name="facebook-domain-verification" content="3xg118z3ugasz8mvn2dypqrw1hs063" />
 
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/dist/styles/main.css?v=9" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/dist/styles/main.min.css?v=9" />
 
 		<?php // Fonts ?>
         <link rel="stylesheet" href="https://use.typekit.net/iiw8hvu.css">
