@@ -6,20 +6,20 @@
  */
 
 // Plugins
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var browserSync = require('browser-sync').create();
-var autoprefixer = require('gulp-autoprefixer');
-var notify  = require('gulp-notify');
-var sourcemaps = require('gulp-sourcemaps');
-var imagemin = require('gulp-imagemin');
-var rename = require('gulp-rename');
-var eslint = require('gulp-eslint');
-var changed = require('gulp-changed');
-var svgSprite = require('gulp-svg-sprite');
-var svgmin = require('gulp-svgmin');
+var gulp = import('gulp');
+var sass = import('gulp-sass');
+var uglify = import('gulp-uglify');
+var concat = import('gulp-concat');
+var browserSync = import('browser-sync');
+var autoprefixer = import('gulp-autoprefixer');
+var notify  = import('gulp-notify');
+var sourcemaps = import('gulp-sourcemaps');
+var imagemin = import('gulp-imagemin');
+var rename = import('gulp-rename');
+var eslint = import('gulp-eslint');
+var changed = import('gulp-changed');
+var svgSprite = import('gulp-svg-sprite');
+var svgmin = import('gulp-svgmin');
 
 var hostname = 'http://tallulah.beta';
 var baseDir = '';
