@@ -75,6 +75,7 @@ form.search__form--news{
     border:1px solid $green;
     .search__input::placeholder{
         color: $green;
+        width:100%;
     }
 }
 

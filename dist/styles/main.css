@@ -1833,7 +1833,8 @@ p.text__feature--green {
       -moz-transition: background 0.5s ease-in-out;
       -webkit-transition: background 0.5s ease-in-out; }
       .filters li a:hover, .filters li a.active {
-        background: #414F3B; }
+        background: #94827B;
+        color: #f9f9ed; }
 
 .page-template-page-listing-news .filters--all {
   background: #414F3B; }
@@ -3346,9 +3347,11 @@ form.search__form--news {
   color: #263A1F;
   border: 1px solid #263A1F; }
   form.search__form--news .search__input::-moz-placeholder {
-    color: #263A1F; }
+    color: #263A1F;
+    width: 100%; }
   form.search__form--news .search__input::placeholder {
-    color: #263A1F; }
+    color: #263A1F;
+    width: 100%; }
 
 @media only screen and (min-width: 800px) {
   .search__mobile {
