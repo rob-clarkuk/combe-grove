@@ -59,6 +59,19 @@
     padding-top: 0px;
 }
 
+.columns-2__row{
+    margin-bottom: 50px;
+}
+
+.columns-2__image{
+    margin-right: 40px;
+    width: calc(50% - 20px);
+
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
 @include media('mobile'){
     .content__padded {
         padding-left: 55px;
@@ -82,14 +95,14 @@
     .content__padded--notop {
         padding-top: 0px;
     }
-}
 
-.columns-2__row{
-    margin-bottom: 50px;
-
-    @media only screen and (min-width: 750px){
+    .columns-2__row{
         display: flex;
         align-items: flex-start;
     }
-}
 
+    .columns-2__image{
+        margin-right: 40px;
+        width: calc(50% - 20px);
+    }
+}
