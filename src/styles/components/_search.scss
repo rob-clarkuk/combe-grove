@@ -73,7 +73,7 @@ form.search__form--news{
     background: transparent;
     color: $green;
     border:1px solid $green;
-    &::placeholder{
+    .search__input::placeholder{
         color: $green;
     }
 }

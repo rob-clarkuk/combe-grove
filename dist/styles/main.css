@@ -3190,7 +3190,7 @@ li.gfield {
       color: transparent;
       font: 0/0 a; }
       .pagination .page-numbers.next:hover {
-        background: #94827B url(../images/right-arrow.svg) center center/8px auto no-repeat;
+        background: #f9f9ed url(../images/right-arrow.svg) center center/8px auto no-repeat;
         border: #707070 1px solid; }
     .pagination .page-numbers.prev {
       background: url(../images/right-arrow.svg) center center/8px auto no-repeat;
@@ -3198,7 +3198,7 @@ li.gfield {
       color: transparent;
       font: 0/0 a; }
       .pagination .page-numbers.prev:hover {
-        background: #94827B url(../images/right-arrow.svg) center center/8px auto no-repeat;
+        background: #f9f9ed url(../images/right-arrow.svg) center center/8px auto no-repeat;
         border: #707070 1px solid; }
 
 .promo__wrapper {
@@ -3345,9 +3345,9 @@ form.search__form--news {
   background: transparent;
   color: #263A1F;
   border: 1px solid #263A1F; }
-  form.search__form--news::-moz-placeholder {
+  form.search__form--news .search__input::-moz-placeholder {
     color: #263A1F; }
-  form.search__form--news::placeholder {
+  form.search__form--news .search__input::placeholder {
     color: #263A1F; }
 
 @media only screen and (min-width: 800px) {

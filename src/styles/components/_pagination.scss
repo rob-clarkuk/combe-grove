@@ -32,7 +32,7 @@
             @include hideText;
 
             &:hover {
-                background: $title1 url(../images/right-arrow.svg) center center / 8px auto no-repeat;
+                background: $white url(../images/right-arrow.svg) center center / 8px auto no-repeat;
                 border: #707070 1px solid;
             }
         }
@@ -43,7 +43,7 @@
             @include hideText;
 
             &:hover {
-                background: $title1 url(../images/right-arrow.svg) center center / 8px auto no-repeat;
+                background: $white url(../images/right-arrow.svg) center center / 8px auto no-repeat;
                 border: #707070 1px solid;
             }
         }
