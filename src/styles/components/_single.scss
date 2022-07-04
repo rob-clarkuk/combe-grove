@@ -3,6 +3,15 @@
     margin-bottom: 40px;
     overflow: hidden;
     width: 100%;
+    li{
+        a{
+            color: $title1;
+            font-family: $font2;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
 }
 
 .single__meta--left {

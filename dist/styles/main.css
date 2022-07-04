@@ -3166,7 +3166,7 @@ li.gfield {
   .pagination .page-numbers {
     background: transparent;
     border: transparent 1px solid;
-    color: #f9f9ed;
+    color: #94827B;
     display: inline-block;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 16px;
@@ -3183,6 +3183,7 @@ li.gfield {
     -webkit-transition: background 0.5s ease-in-out; }
     .pagination .page-numbers:hover, .pagination .page-numbers.current {
       background: #94827B;
+      color: #f9f9ed;
       border: #707070 1px solid; }
     .pagination .page-numbers.next {
       background: url(../images/right-arrow.svg) center center/8px auto no-repeat;
@@ -3358,6 +3359,12 @@ form.search__form--news {
   margin-bottom: 40px;
   overflow: hidden;
   width: 100%; }
+  .single__meta li a {
+    color: #94827B;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none; }
 
 .single__meta--left {
   float: left;
