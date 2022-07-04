@@ -3344,6 +3344,10 @@ form.search__form--news {
   background: transparent;
   color: #263A1F;
   border: 1px solid #263A1F; }
+  form.search__form--news::-moz-placeholder {
+    color: #263A1F; }
+  form.search__form--news::placeholder {
+    color: #263A1F; }
 
 @media only screen and (min-width: 800px) {
   .search__mobile {
