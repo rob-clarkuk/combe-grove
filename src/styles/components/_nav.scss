@@ -114,7 +114,7 @@
     &.nav__row--submenu-1 {
         a {
             &:hover {
-                color: $title;
+                color: $title1;
             }
         }
     }
@@ -165,7 +165,7 @@
 
         .nav__utility--home {
             path {
-                fill: $featureFaint;
+                fill: $title1;
                 @include trans(fill);
             }
 
