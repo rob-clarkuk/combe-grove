@@ -2,6 +2,7 @@
     get_header();
 ?>
     <section class="content">
+        
         <div class="banner__top">
             <img src="<?php the_field('top_banner_image'); ?>">
         </div>
