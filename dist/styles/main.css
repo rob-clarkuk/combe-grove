@@ -1909,6 +1909,9 @@ p.text__feature--green {
       .footer-links li a:hover {
         color: #695B5A; }
 
+.footer__logos {
+  clear: both; }
+
 .footer__logos li {
   background-size: 100% auto;
   display: inline-block;
