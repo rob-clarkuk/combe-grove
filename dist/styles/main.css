@@ -1490,7 +1490,7 @@ p.text__feature--green {
 .button__feature {
   background: #A2A569;
   border: none;
-  color: #EEEFE7;
+  color: #263A1F;
   display: block;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 14px;
@@ -1514,9 +1514,9 @@ p.text__feature--green {
     background: #695B5A; }
 
 .button__feature--3 {
-  background: #d6e681; }
+  background: #414f3b; }
   .button__feature--3:hover {
-    background: #695B5A; }
+    background: #A2A569; }
 
 .button__feature--4 {
   background: transparent; }
@@ -1803,19 +1803,19 @@ p.text__feature--green {
       -moz-transition: background 0.5s ease-in-out;
       -webkit-transition: background 0.5s ease-in-out; }
       .filters li a:hover, .filters li a.active {
-        background: #BECE9A; }
+        background: #414F3B; }
 
 .page-template-page-listing-news .filters--all {
-  background: #BECE9A; }
+  background: #414F3B; }
 
 .category-whats-on-in-bath .filters--whats-on {
-  background: #BECE9A; }
+  background: #414F3B; }
 
 .category-news .filters--hotel {
-  background: #BECE9A; }
+  background: #414F3B; }
 
 .category-club-news .filters--club {
-  background: #BECE9A; }
+  background: #414F3B; }
 
 @media only screen and (min-width: 650px) {
   .filters li a {
@@ -2379,7 +2379,7 @@ li.gfield {
     width: 195px; }
 
 .home__strapline {
-  background: #BECE9A;
+  background: #414F3B;
   bottom: 0px;
   color: #F7F5F5;
   left: 0px;
@@ -3142,14 +3142,14 @@ li.gfield {
     -moz-transition: background 0.5s ease-in-out;
     -webkit-transition: background 0.5s ease-in-out; }
     .pagination .page-numbers:hover, .pagination .page-numbers.current {
-      background: #BECE9A;
+      background: #414F3B;
       border: #707070 1px solid; }
     .pagination .page-numbers.next {
       background: url(../images/right-arrow.svg) center center/8px auto no-repeat;
       color: transparent;
       font: 0/0 a; }
       .pagination .page-numbers.next:hover {
-        background: #BECE9A url(../images/right-arrow.svg) center center/8px auto no-repeat;
+        background: #414F3B url(../images/right-arrow.svg) center center/8px auto no-repeat;
         border: #707070 1px solid; }
     .pagination .page-numbers.prev {
       background: url(../images/right-arrow.svg) center center/8px auto no-repeat;
@@ -3157,7 +3157,7 @@ li.gfield {
       color: transparent;
       font: 0/0 a; }
       .pagination .page-numbers.prev:hover {
-        background: #BECE9A url(../images/right-arrow.svg) center center/8px auto no-repeat;
+        background: #414F3B url(../images/right-arrow.svg) center center/8px auto no-repeat;
         border: #707070 1px solid; }
 
 .promo__wrapper {
@@ -3179,7 +3179,7 @@ li.gfield {
   position: relative;
   width: calc(100%); }
   .promo:hover h3 {
-    color: #BECE9A; }
+    color: #414F3B; }
   .promo img {
     display: block;
     position: relative;
