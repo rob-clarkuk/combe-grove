@@ -1872,7 +1872,6 @@ p.text__feature--green {
       .footer p a:hover {
         color: #695B5A; }
   .footer .footer__logomark {
-    background: url(../images/footer-logo-mark.svg) right 17px/100px 100px no-repeat;
     min-height: 139px;
     position: relative; }
 
@@ -1947,7 +1946,11 @@ p.text__feature--green {
     margin-top: 40px; }
   .footer-links {
     right: 150px;
-    top: 15px; } }
+    top: 15px; }
+  .footer__logos {
+    position: absolute;
+    right: 0;
+    top: 64px; } }
 
 ::-webkit-input-placeholder {
   color: #949592; }

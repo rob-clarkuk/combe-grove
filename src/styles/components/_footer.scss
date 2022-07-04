@@ -27,7 +27,6 @@
     }
 
     .footer__logomark {
-        background: url(../images/footer-logo-mark.svg) right 17px / 100px 100px no-repeat;
         min-height: 139px;
         position: relative;
     }
@@ -126,5 +125,11 @@
     .footer-links {
         right: 150px;
         top: 15px;
+    }
+
+    .footer__logos {
+        position: absolute;
+        right: 0;
+        top: 64px;
     }
 }
