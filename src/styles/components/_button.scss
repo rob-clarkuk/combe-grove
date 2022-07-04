@@ -27,7 +27,6 @@
 .button__feature {
     background: $green3;
     border: none;
-    color: $green;
     display: block;
     font-family: $font3;
     font-size: 14px;
@@ -56,9 +55,11 @@
 
 .button__feature--3 {
     background: $green4;
+    color: $green;
 
     &:hover {
         background: $green3;
+        color: $green4;
     }
 }
 

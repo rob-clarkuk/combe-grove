@@ -1182,7 +1182,7 @@ iframe {
   visibility: hidden !important; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "minion-pro", serif;
   font-style: normal;
   font-weight: 400; }
 
@@ -1192,7 +1192,7 @@ body {
 h1,
 h2.fauxH1 {
   color: #695B5A;
-  font-family: "Open Sans", sans-serif;
+  font-family: "minion-pro", serif;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 30px; }
@@ -1235,7 +1235,7 @@ h1 em, h2 em, h3 em {
 
 p {
   color: #747474;
-  font-family: "Open Sans", sans-serif;
+  font-family: "minion-pro", serif;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 20px; }
@@ -1254,7 +1254,7 @@ p {
   margin-bottom: 10px; }
   .type__content ul li {
     color: #747474;
-    font-family: "Open Sans", sans-serif;
+    font-family: "minion-pro", serif;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 10px;
@@ -1490,7 +1490,6 @@ p.text__feature--green {
 .button__feature {
   background: #414f3b;
   border: none;
-  color: #263A1F;
   display: block;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 14px;
@@ -1514,9 +1513,11 @@ p.text__feature--green {
     background: #695B5A; }
 
 .button__feature--3 {
-  background: #d6e681; }
+  background: #d6e681;
+  color: #263A1F; }
   .button__feature--3:hover {
-    background: #414f3b; }
+    background: #414f3b;
+    color: #d6e681; }
 
 .button__feature--4 {
   background: transparent; }
@@ -1978,7 +1979,7 @@ input[type="submit"] {
 .gform_wrapper .ginput_container_radio label,
 .gform_wrapper .ginput_container_checkbox label {
   color: #747474;
-  font-family: "Open Sans", sans-serif;
+  font-family: "minion-pro", serif;
   font-size: 20px !important;
   text-transform: none; }
 
@@ -2994,7 +2995,7 @@ li.gfield {
     .nav__row--submenu > li > ul > li > a {
       color: #94827B;
       display: block;
-      font-family: "Open Sans", sans-serif;
+      font-family: "minion-pro", serif;
       font-size: 22px;
       font-weight: 700;
       margin-bottom: 10px;
