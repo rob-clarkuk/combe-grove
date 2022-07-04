@@ -67,6 +67,11 @@ img {
 	transform: translateX(-50%);
 }
 
+.img_alignleft{
+	float: left;
+    margin: 0 20px 20px 0;
+}
+
 iframe {
     position: relative;
     z-index: 2;
