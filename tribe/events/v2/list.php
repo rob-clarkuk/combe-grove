@@ -48,6 +48,10 @@ if ( empty( $disable_event_search ) ) {
 	}
 </style>
 <section class="content">
+	<div class="banner__top">
+        <img src="<?php the_field('event_banner_image', 'options'); ?>">
+    </div>
+    
     <div class="layout__inner content__tint content__tint--extended">
 		<div
 			<?php tribe_classes( $container_classes ); ?>
@@ -108,9 +112,7 @@ if ( empty( $disable_event_search ) ) {
 		</div>
 
 	</div>
-    <div class="banner__top">
-        <img src="<?php the_field('event_banner_image', 'options'); ?>">
-    </div>
+
 </section>
 
 <?php $this->template( 'components/breakpoints' ); ?>

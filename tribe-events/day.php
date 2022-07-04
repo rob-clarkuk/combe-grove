@@ -18,6 +18,10 @@ do_action( 'tribe_events_before_template' );
 ?>
 
 <section class="content">
+	<div class="banner__top">
+		<img src="<?php the_field('event_banner_image', 'options'); ?>">
+	</div>
+	
     <div class="layout__inner layout__inner--condensed content__padded content__tint content__tint--extended">
 		<!-- Title Bar -->
 		<?php tribe_get_template_part( 'day/title-bar' ); ?>
@@ -28,9 +32,7 @@ do_action( 'tribe_events_before_template' );
 		<!-- Main Events Content -->
 		<?php tribe_get_template_part( 'day/content' ) ?>
 	</div>
-	<div class="banner__top">
-		<img src="<?php the_field('event_banner_image', 'options'); ?>">
-	</div>
+	
 </section>
 
 <?php
