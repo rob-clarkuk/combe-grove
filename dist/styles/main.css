@@ -1943,7 +1943,7 @@ p.text__feature--green {
   .footer__logo {
     margin-top: 40px; }
   .footer-links {
-    right: 150px;
+    right: 0px;
     top: 15px; }
   .footer__logos {
     position: absolute;
