@@ -1174,7 +1174,7 @@ input:not([type="radio"]):not([type="checkbox"]) {
   left: 50%;
   transform: translateX(-50%); }
 
-.img_alignleft {
+img.alignleft {
   float: left;
   margin: 0 20px 20px 0; }
 
