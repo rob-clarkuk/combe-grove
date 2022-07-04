@@ -112,11 +112,6 @@
 }
 
 @include media('small-tablet'){
-    .footer {
-        .footer__logomark {
-            background: url(../images/footer-logo-mark.svg) right 15px / 132px 132px no-repeat;
-        }
-    }
 
     .footer__logo {
         margin-top: 40px;
