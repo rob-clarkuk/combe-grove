@@ -1200,7 +1200,7 @@ h2.fauxH1 {
 h2,
 h2.h2,
 .fauxH2 {
-  color: #414F3B;
+  color: #96A573;
   font-family: "minion-pro", serif;
   font-size: 22px;
   font-weight: 400;
@@ -1489,7 +1489,7 @@ p.text__feature--green {
   padding: 13px 55px; }
 
 .button__feature {
-  background: #414f3b;
+  background: #96A573;
   border: none;
   color: #f9f9ed;
   display: block;
@@ -1518,7 +1518,7 @@ p.text__feature--green {
   background: #d6e681;
   color: #263A1F; }
   .button__feature--3:hover {
-    background: #414f3b;
+    background: #96A573;
     color: #d6e681; }
 
 .button__feature--4 {
