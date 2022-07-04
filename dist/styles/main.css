@@ -3341,7 +3341,9 @@ li.gfield {
   font: 0/0 a; }
 
 form.search__form--news {
-  background: transparent; }
+  background: transparent;
+  color: #263A1F;
+  border: 1px solid #263A1F; }
 
 @media only screen and (min-width: 800px) {
   .search__mobile {

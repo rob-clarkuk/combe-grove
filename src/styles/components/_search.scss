@@ -71,6 +71,8 @@
 
 form.search__form--news{
     background: transparent;
+    color: $green;
+    border:1px solid $green;
 }
 
 @include media('tablet'){
