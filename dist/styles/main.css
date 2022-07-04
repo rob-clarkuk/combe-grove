@@ -1488,7 +1488,7 @@ p.text__feature--green {
   padding: 13px 55px; }
 
 .button__feature {
-  background: #A2A569;
+  background: #414f3b;
   border: none;
   color: #263A1F;
   display: block;
@@ -1514,9 +1514,9 @@ p.text__feature--green {
     background: #695B5A; }
 
 .button__feature--3 {
-  background: #414f3b; }
+  background: #d6e681; }
   .button__feature--3:hover {
-    background: #A2A569; }
+    background: #414f3b; }
 
 .button__feature--4 {
   background: transparent; }
