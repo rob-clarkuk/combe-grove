@@ -6,7 +6,7 @@
     .page-numbers {
         background: transparent;
         border: transparent 1px solid;
-        color: #747474;
+        color: $white;
         display: inline-block;
         font-family: $font3;
         font-size: 16px;
@@ -22,7 +22,7 @@
 
         &:hover,
         &.current {
-            background: $green2;
+            background: $title1;
             border: #707070 1px solid;
         }
 
