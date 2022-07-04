@@ -1200,7 +1200,7 @@ h2.fauxH1 {
 h2,
 h2.h2,
 .fauxH2 {
-  color: #96A573;
+  color: #263A1F;
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px; }
@@ -1247,7 +1247,7 @@ p {
     -moz-transition: color 0.5s ease-in-out;
     -webkit-transition: color 0.5s ease-in-out; }
     p a:hover {
-      color: #96A573; }
+      color: #263A1F; }
 
 .type__content ul {
   display: inline-block;
@@ -1262,7 +1262,7 @@ p {
     position: relative; }
     .type__content ul li:before {
       content: "";
-      background: #96A573;
+      background: #263A1F;
       border-radius: 100%;
       height: 6px;
       left: 0px;
@@ -1285,7 +1285,7 @@ p.text__feature--red {
   font-weight: 700; }
 
 p.text__feature--green {
-  color: #96A573;
+  color: #263A1F;
   font-size: 24px;
   font-weight: 700; }
 
@@ -1296,7 +1296,7 @@ p.text__feature--green {
   h2,
   h2.h2,
   .fauxH2 {
-    color: #96A573;
+    color: #263A1F;
     font-size: 30px; }
   p.text__feature--red {
     font-size: 30px; }
@@ -2148,7 +2148,7 @@ li.gfield {
   height: 45px; }
 
 .header__fixed {
-  background: #263a1f;
+  background: #263A1F;
   height: 45px;
   left: 0px;
   position: fixed;
@@ -2379,7 +2379,7 @@ li.gfield {
     width: 195px; }
 
 .home__strapline {
-  background: #B4B6A4;
+  background: #BECE9A;
   bottom: 0px;
   color: #F7F5F5;
   left: 0px;
@@ -2708,7 +2708,7 @@ li.gfield {
   .menu__item .nav__title--1 .menu__link {
     color: #B96E68; }
   .menu__item .nav__title--2 .menu__link {
-    color: #96A573; }
+    color: #263A1F; }
   .menu__item .nav__title--3 .menu__link {
     color: #7A99AC; }
   .menu__item .nav__title--4 .menu__link {
@@ -2973,7 +2973,7 @@ li.gfield {
     .nav__title h4.nav__title--1 {
       color: #B96E68; }
     .nav__title h4.nav__title--2 {
-      color: #96A573; }
+      color: #263A1F; }
     .nav__title h4.nav__title--3 {
       color: #7A99AC; }
   .nav__title.nav__title--wide {
@@ -3011,7 +3011,7 @@ li.gfield {
   .nav__row--submenu.nav__row--submenu-1 a:hover {
     color: #B96E68; }
   .nav__row--submenu.nav__row--submenu-2 a:hover {
-    color: #96A573; }
+    color: #263A1F; }
   .nav__row--submenu.nav__row--submenu-3 a:hover {
     color: #7A99AC; }
   .nav__row--submenu.nav__row--submenu-4 a:hover {
