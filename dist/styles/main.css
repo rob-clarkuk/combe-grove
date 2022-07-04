@@ -1182,7 +1182,7 @@ iframe {
   visibility: hidden !important; }
 
 body {
-  font-family: "minion-pro", serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400; }
 
@@ -1490,6 +1490,7 @@ p.text__feature--green {
 .button__feature {
   background: #414f3b;
   border: none;
+  color: #f9f9ed;
   display: block;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 14px;
@@ -1563,7 +1564,8 @@ p.text__feature--green {
     margin: 0 0 70px 105px; } }
 
 .club__menu__wrapper {
-  position: relative; }
+  position: relative;
+  margin-left: 8px; }
   .club__menu__wrapper:hover a.button, .club__menu__wrapper:hover a.tribe-events-read-more, .club__menu__wrapper:hover .tribe-events-nav-previous a, .tribe-events-nav-previous .club__menu__wrapper:hover a, .club__menu__wrapper:hover .tribe-events-nav-next a, .tribe-events-nav-next .club__menu__wrapper:hover a {
     background: #695B5A; }
   .club__menu__wrapper:hover .club__menu {
