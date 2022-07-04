@@ -3371,12 +3371,12 @@ form.search__form--news {
   background: transparent;
   color: #263A1F;
   border: 1px solid #263A1F; }
+  form.search__form--news .search__input {
+    width: 100%; }
   form.search__form--news .search__input::-moz-placeholder {
-    color: #263A1F;
-    width: 100%; }
+    color: #263A1F; }
   form.search__form--news .search__input::placeholder {
-    color: #263A1F;
-    width: 100%; }
+    color: #263A1F; }
 
 @media only screen and (min-width: 800px) {
   .search__mobile {
