@@ -144,6 +144,11 @@
     }
 }
 
+.nav__row--responsive>li {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
 .nav__utility {
     float: right;
 

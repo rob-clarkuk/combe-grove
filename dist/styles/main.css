@@ -3086,6 +3086,10 @@ li.gfield {
   .nav__row--submenu.nav__row--submenu-4 a:hover {
     color: #695B5A; }
 
+.nav__row--responsive > li {
+  margin-bottom: 30px;
+  width: 100%; }
+
 .nav__utility {
   float: right; }
   .nav__utility ul li {
