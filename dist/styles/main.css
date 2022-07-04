@@ -2156,7 +2156,8 @@ li.gfield {
 
 .gallery__item {
   float: left;
-  width: calc(50% - 5px); }
+  width: calc(50% - 5px);
+  margin-bottom: 10px; }
   .gallery__item img {
     display: block;
     width: 100%; }
