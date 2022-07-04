@@ -2189,7 +2189,6 @@ li.gfield {
     width: calc(25% - 8px); } }
 
 .header {
-  height: calc(134px + 45px);
   padding-top: 45px;
   position: relative;
   z-index: 99999; }
