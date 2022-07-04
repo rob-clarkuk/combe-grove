@@ -1610,13 +1610,13 @@ p.text__feature--green {
     margin-bottom: 30px; }
 
 .content__tint {
-  background: rgba(238, 239, 231, 0.95);
+  background: rgba(249, 249, 237, 0.95);
   padding-top: 30px;
   position: relative;
   z-index: 2; }
 
 .content__tint--extended:after {
-  background: rgba(238, 239, 231, 0.95);
+  background: rgba(249, 249, 237, 0.95);
   content: "";
   bottom: -300px;
   left: 0px;
@@ -3265,7 +3265,7 @@ li.gfield {
   .promo {
     float: none;
     margin: 0 7px 15px;
-    width: calc(33.33% - 17px); }
+    width: calc(33.33% - 18px); }
     .promo h3 {
       bottom: 15px;
       font-size: 28px;
@@ -3273,7 +3273,7 @@ li.gfield {
 
 @media only screen and (min-width: 1024px) {
   .promo {
-    width: calc(25% - 17px); } }
+    width: calc(25% - 18px); } }
 
 .search__form {
   background: #414f3b;

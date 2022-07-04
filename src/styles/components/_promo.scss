@@ -97,7 +97,7 @@
     .promo {
         float: none;
         margin: 0 7px 15px;
-        width: calc(33.33% - 17px);
+        width: calc(33.33% - 18px);
 
         h3 {
             bottom: 15px;
@@ -115,6 +115,6 @@
 @include media('tablet-landscape'){
     .promo {
         //border-right: 20px solid $backgroundTint;
-        width: calc(25% - 17px);
+        width: calc(25% - 18px);
     }
 }
