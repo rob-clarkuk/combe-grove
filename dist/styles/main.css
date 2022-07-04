@@ -1200,7 +1200,8 @@ h2.fauxH1 {
 h2,
 h2.h2,
 .fauxH2 {
-  color: #263A1F;
+  color: #414F3B;
+  font-family: "minion-pro", serif;
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px; }
@@ -1648,6 +1649,11 @@ p.text__feature--green {
   display: block;
   margin-bottom: 20px;
   width: 100%; }
+
+.module--2-cols {
+  background: rgba(249, 249, 237, 0.95);
+  padding: 50px 0 0;
+  overflow: hidden; }
 
 @media only screen and (min-width: 650px) {
   .content__padded {

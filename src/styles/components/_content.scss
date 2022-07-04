@@ -72,6 +72,12 @@
     width: 100%;
 }
 
+.module--2-cols{
+    background: $background;
+    padding: 50px 0 0;
+    overflow: hidden;
+}
+
 @include media('mobile'){
     .content__padded {
         padding-left: 55px;
