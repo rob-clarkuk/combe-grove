@@ -84,19 +84,6 @@
             ?>
         </div>
 
-        <?php
-        if ( is_page_template( 'page-home.php' ) ) {
-
-        } else { ?>
-            <div class="layout__inner">
-
-                <div class="header__logo">
-    				<a href="/" class="header__logo--link">Combe Grove</a>
-    			</div>
-
-    		</div>
-        <?php } ?>
-
 
 	</header>
 	<!-- /header -->
