@@ -4,9 +4,14 @@
     overflow: hidden;
     width: 100%;
     li{
+        color: $title1;
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 10px;
+        padding-left: 0px;
         a{
             color: $title1;
-            font-family: $font2;
+            font-family: $font3;
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
