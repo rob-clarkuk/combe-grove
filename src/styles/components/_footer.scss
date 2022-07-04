@@ -76,6 +76,13 @@
     }
 }
 
+.footer__logo--1 {
+    background: url(../images/APPs_Good_for_Business.png) 0 0 no-repeat;
+    height: 73px;
+    margin-right: 30px;
+    width: 150px;
+}
+
 @include media('smallest'){
     .footer-links {
         position: absolute;

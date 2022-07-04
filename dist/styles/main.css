@@ -1910,6 +1910,12 @@ p.text__feature--green {
       .footer-links li a:hover {
         color: #695B5A; }
 
+.footer__logo--1 {
+  background: url(../images/APPs_Good_for_Business.png) 0 0 no-repeat;
+  height: 73px;
+  margin-right: 30px;
+  width: 150px; }
+
 @media only screen and (min-width: 550px) {
   .footer-links {
     position: absolute;
@@ -3521,7 +3527,7 @@ form.search__form--news {
     height: 100%;
     width: 100%; }
     .social__item a svg path {
-      fill: #695B5A;
+      fill: #263A1F;
       transition: fill 0.5s ease-in-out;
       -moz-transition: fill 0.5s ease-in-out;
       -webkit-transition: fill 0.5s ease-in-out; }
