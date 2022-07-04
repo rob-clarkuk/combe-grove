@@ -1326,13 +1326,13 @@ p.text__feature--green {
 @media only screen and (min-width: 750px) {
   .mobile-only {
     display: none; }
-  .no-mobile {
-    display: block; }
   .no-medium {
     display: none; } }
 
 @media only screen and (min-width: 1024px) {
   .no-medium {
+    display: block; }
+  .no-mobile {
     display: block; } }
 
 /* Vendor

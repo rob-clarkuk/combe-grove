@@ -26,10 +26,6 @@
 		display: none;
 	}
 
-	.no-mobile {
-		display: block;
-	}
-
     .no-medium {
         display: none;
     }
@@ -39,4 +35,8 @@
     .no-medium {
         display: block;
     }
+
+    .no-mobile {
+		display: block;
+	}
 }
