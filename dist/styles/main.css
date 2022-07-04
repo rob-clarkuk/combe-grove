@@ -3340,6 +3340,9 @@ li.gfield {
   color: transparent;
   font: 0/0 a; }
 
+.form.search__form--news {
+  background: transparent; }
+
 @media only screen and (min-width: 800px) {
   .search__mobile {
     display: none !important; } }

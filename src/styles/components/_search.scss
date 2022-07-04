@@ -69,6 +69,10 @@
     @include hideText;
 }
 
+.form.search__form--news{
+    background: transparent;
+}
+
 @include media('tablet'){
     .search__mobile {
         display: none!important;
