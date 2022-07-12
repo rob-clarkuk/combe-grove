@@ -3,7 +3,13 @@
     get_header();
 ?>
     <section class="home__carousel--wrapper">
-        <h1 class="header__logo">Combe Grove</h1>
+        <div class="header__heading">
+            <h1 class="header__logo">Combe Grove</h1>
+            <?php if (get_field('header_subheading')){;?>
+                <h2 class="header__subheading"><?php the_field('header_subheading');?></h2>
+            <?php };?>
+        </div>
+        
 
 
 
