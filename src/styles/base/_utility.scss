@@ -1,0 +1,103 @@
+// Clearfix
+// -------------------------------------
+
+.u-clearfix,
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.u-hide {
+	display: none;
+}
+
+// Justify children
+// -------------------------------------
+
+.u-justify-children {
+	text-align: justify;
+
+	&:after {
+		content: "";
+		width: 100%;
+		display: inline-block;
+	}
+
+}
+
+// Text Alignment
+// -------------------------------------
+
+.u-align-centre {
+	text-align: center;
+}
+
+.u-align-left {
+	text-align: left;
+}
+
+.u-align-right {
+	text-align: right;
+}
+
+.u-italic {
+	font-style: italic;
+}
+
+.u-lowercase {
+	text-transform: lowercase;
+}
+
+.u-capitalise {
+	text-transform: capitalize;
+}
+
+.u-uppercase {
+	text-transform: uppercase;
+}
+
+// Clear
+// -------------------------------------
+
+.u-clear-left {
+	clear: left;
+}
+
+.u-clear-right {
+	clear: right;
+}
+
+
+// Mobile Only
+// -------------------------------------
+
+.u-tablet-only,
+.u-laptop-only {
+	display: none;
+}
+
+@include media("tablet") {
+	
+	.u-tablet-only {
+		display: block;
+	}
+
+	.u-mobile-only {
+		display: none;
+	}
+}
+
+@include media("desktop") {
+
+	.u-desktop-only {
+		display: block;
+	}
+
+	.u-desktop-hide {
+		display: none;
+	}
+
+}

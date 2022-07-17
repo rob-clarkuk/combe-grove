@@ -1,0 +1,51 @@
+.pagination {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+
+    .page-numbers {
+        background: transparent;
+        border: transparent 1px solid;
+        color: $title1;
+        display: inline-block;
+        font-family: $font3;
+        font-size: 16px;
+        font-weight: 700;
+        height: 31px;
+        line-height: 31px;
+        margin: 0 5px;
+        overflow: hidden;
+        text-align: center;
+        text-decoration: none;
+        width: 31px;
+        @include trans(background);
+
+        &:hover,
+        &.current {
+            background: $title1;
+            color: $white;
+            border: #707070 1px solid;
+        }
+
+        &.next {
+            background: url(../images/right-arrow.svg) center center / 8px auto no-repeat;
+            @include hideText;
+
+            &:hover {
+                background: $white url(../images/right-arrow.svg) center center / 8px auto no-repeat;
+                border: #707070 1px solid;
+            }
+        }
+
+        &.prev {
+            background: url(../images/right-arrow.svg) center center / 8px auto no-repeat;
+            transform: rotate(180deg);
+            @include hideText;
+
+            &:hover {
+                background: $white url(../images/right-arrow.svg) center center / 8px auto no-repeat;
+                border: #707070 1px solid;
+            }
+        }
+    }
+}

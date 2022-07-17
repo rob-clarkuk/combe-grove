@@ -1,0 +1,97 @@
+.team__wrapper {
+    clear: both;
+    overflow: hidden;
+}
+
+.team__item {
+    background: #fff;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    &:hover,
+    &.open {
+        .team__item__inner:after {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.team__item__inner {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        background: url(../images/croos.svg) 0 0 / 100% auto no-repeat;
+        bottom: 15px;
+        content: "";
+        height: 30px;
+        position: absolute;
+        right: 15px;
+        transform: rotate(-45deg);
+        width: 30px;
+        @include trans(transform);
+    }
+}
+
+.team__item__content {
+    float: left;
+    padding: 15px;
+    width: 50%;
+
+    h3 {
+        color: $feature;
+        font-family: $font3;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        color: $red;
+        font-family: $font3;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &.team__item__content--wide {
+        width: 100%;
+    }
+}
+
+.team__item__biography {
+    clear: both;
+    display: none;
+    padding: 15px;
+}
+
+@include media('tablet'){
+    .team__item {
+        float: left;
+        margin-right: 14px;
+        width: calc(50% - 7px);
+
+        &:nth-of-type(2n){
+            margin-right: 0px;
+        }
+
+        &:nth-of-type(2n+1){
+            clear: both;
+        }
+    }
+}
+
+@include media('tablet-landscape'){
+    .team__item__content,
+    .team__item__biography {
+        padding: 20px;
+    }
+}

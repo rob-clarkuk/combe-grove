@@ -1,0 +1,23 @@
+// Media queries
+// -------------------------------------
+
+@mixin media($query) {
+
+	$breakpoint-exists: false;
+
+	@each $breakpoint in $breakpoints {
+		$alias: 	nth($breakpoint, 1);
+		$condition: nth($breakpoint, 2);
+		@if $query == $alias and $condition {
+			$breakpoint-exists: true;
+			@media #{$condition} {
+				@content;
+			}
+		}
+	}
+
+	@if ($breakpoint-exists == false) {
+		@warn "Breakpoint '#{$query}' does not exist or is missing a condition";
+	}
+
+}

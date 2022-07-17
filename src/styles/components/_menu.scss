@@ -1,0 +1,439 @@
+.menu__hamburger {
+    color: $background;
+    float: left;
+    font-family: $font3;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 12px 0 11px 29px;
+    position: relative;
+    text-decoration: none;
+    @include trans(color);
+
+    &:hover {
+        color: $highlight;
+
+        span,
+        span:before,
+        span:after {
+            background: $highlight;
+        }
+    }
+
+    span {
+        background: $background;
+        height: 3px;
+        left: 0px;
+        margin-top: -1px;
+        position: absolute;
+        top: 50%;
+        width: 21px;
+        @include trans(background);
+
+        &:before,
+        &:after {
+            background: $background;
+            content: "";
+            height: 3px;
+            left: 0px;
+            position: absolute;
+            width: 21px;
+            @include trans(background);
+        }
+
+        &:before {
+            top: -7px;
+        }
+
+        &:after {
+            top: 7px;
+        }
+    }
+}
+
+
+/* Icons (made with Icomoon.io) */
+
+// @font-face {
+// 	font-family: $font3;
+// 	font-weight: normal;
+// 	font-style: normal;
+// 	src: url('../fonts/feather/feather.eot?1gafuo');
+// 	src: url('../fonts/feather/feather.eot?1gafuo#iefix') format('embedded-opentype'), url('../fonts/feather/feather.woff2?1gafuo') format('woff2'), url('../fonts/feather/feather.ttf?1gafuo') format('truetype'), url('../fonts/feather/feather.woff?1gafuo') format('woff'), url('../fonts/feather/feather.svg?1gafuo#feather') format('svg');
+// }
+
+.icon {
+	//font-family: $font3;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	speak: none;
+}
+
+.icon--arrow-left:before {
+	content: '\e901';
+}
+
+.icon--menu:before {
+	content: '\e903';
+}
+
+.icon--cross:before {
+	content: '\e117';
+}
+
+
+/* Menu styles */
+
+.menu {
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 300px;
+	height: calc(100vh - 120px);
+    text-align: left;
+	background: $background;
+
+    .button__feature {
+        padding: 0px 12px;
+    }
+}
+
+.menu__wrap {
+	position: absolute;
+	top: 150px;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.menu__level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	overflow-y: scroll;
+	width: calc(100% + 50px);
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu__level:focus {
+	outline: none;
+}
+
+.menu__level--current {
+	visibility: visible;
+}
+
+.menu__item {
+	display: block;
+    margin-bottom: 0px;
+	width: calc(100% - 50px);
+
+    h4 {
+        margin-bottom: 0px!important;
+    }
+
+    .nav__title--1 .menu__link {
+        color: $red;
+    }
+
+    .nav__title--2 .menu__link {
+        color: $green;
+    }
+
+    .nav__title--3 .menu__link {
+        color: $blue;
+    }
+
+    .nav__title--4 .menu__link {
+        color: $feature;
+    }
+}
+
+.menu__link {
+    font-size: 22px;
+	font-weight: 600;
+	position: relative;
+	display: block;
+	padding: 0 2.5em 30px 20px;
+	color: #94827B;
+	-webkit-transition: color 0.1s;
+	transition: color 0.1s;
+    text-decoration: none;
+}
+
+.menu__link[data-submenu]::after {
+    background: url(../images/arrow-mobile-menu.svg) 0 0 / 100% auto no-repeat;
+	content: '';
+	position: absolute;
+    right: 20px;
+    width: 8px;
+    height: 21px;
+    top: 0px;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.menu__link[data-submenu]:hover::after,
+.menu__link[data-submenu]:focus::after {
+	color: $red;
+}
+
+.menu__link--current {
+	color: $red;
+}
+
+[class^='animate-'],
+[class*=' animate-'] {
+	visibility: visible;
+}
+
+.animate-outToRight .menu__item {
+	-webkit-animation: outToRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+	animation: outToRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@-webkit-keyframes outToRight {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+}
+
+@keyframes outToRight {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+}
+
+.animate-outToLeft .menu__item {
+	-webkit-animation: outToLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+	animation: outToLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@-webkit-keyframes outToLeft {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@keyframes outToLeft {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+.animate-inFromLeft .menu__item {
+	-webkit-animation: inFromLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+	animation: inFromLeft 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@-webkit-keyframes inFromLeft {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes inFromLeft {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.animate-inFromRight .menu__item {
+	-webkit-animation: inFromRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+	animation: inFromRight 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@-webkit-keyframes inFromRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes inFromRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.menu__breadcrumbs {
+    margin-top: 100px;
+	position: relative;
+	padding: 0 3.75em 30px 20px;
+}
+
+.menu__breadcrumbs a {
+    font-family: $font3;
+    font-size: 14px;
+    font-weight: 700;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: #747474;
+    text-decoration: none;
+}
+
+.menu__breadcrumbs a:last-child {
+	pointer-events: none;
+}
+
+.menu__breadcrumbs a:hover,
+.menu__breadcrumbs a:focus {
+	color: $red;
+}
+
+.menu__breadcrumbs a:not(:last-child)::after {
+	content: '\2022';
+	font-family: $font3;
+	display: inline-block;
+	padding: 0 0.5em;
+	color: #747474;
+}
+
+.menu__breadcrumbs a:not(:last-child):hover::after,
+.menu__breadcrumbs a:not(:last-child):focus::after {
+	color: $red;
+}
+
+.menu__back {
+	font-size: 1.05em;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	right: 2.25em;
+	margin: 0;
+	padding: 1.365em 0.65em 0 0;
+	cursor: pointer;
+	color: #2a2b30;
+	border: none;
+	background: none;
+}
+
+.menu__back--hidden {
+	pointer-events: none;
+	opacity: 0;
+}
+
+.menu__back:hover,
+.menu__back:focus {
+	color: #fff;
+	outline: none;
+}
+
+
+/* Open and close buttons */
+
+.action {
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+.action:focus {
+	outline: none;
+}
+
+.action--open {
+	background: transparent;
+    top: 0px;
+    left: 5px;
+    display: none;
+    position: fixed;
+    height: 45px;
+    width: 90px;
+	z-index: 1000;
+}
+
+.action--close {
+    background: url(../images/cross.svg) 0 0 / 100% 100% no-repeat;
+    border: none;
+    display: block;
+    height: 14px;
+    left: 20px;
+    position: absolute;
+    top: 70px;
+    transform: rotate(0deg);
+    width: 14px;
+    @include trans(transform);
+
+    &:hover {
+        transform: rotate(720deg);
+    }
+}
+
+@media screen and (max-width: 749px) {
+	.action--open,
+	.action--close {
+		display: block;
+	}
+	.menu {
+		z-index: 99999;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
+	}
+	.menu--open {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@media screen and (min-width: 750px) {
+    .menu {
+        display: none;
+    }
+}

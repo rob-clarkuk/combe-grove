@@ -1,0 +1,30 @@
+.banner__top {
+    max-height: 560px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    img {
+        display: block;
+        height: auto;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+    }
+
+    &:after {
+        background: rgba(39,39,39,0.3);
+        content: "";
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+@include media('tablet'){
+
+}

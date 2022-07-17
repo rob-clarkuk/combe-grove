@@ -1,0 +1,129 @@
+.button {
+    background: #fff;
+    border: 1px solid $red;
+    color: $red;
+    display: inline-block;
+    font-family: $font3;
+    font-size: 18px;
+    font-weight: 700;
+    //height: 45px;
+    //line-height: 45px;
+    padding: 13px 17px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include trans(all);
+
+    &:hover {
+        background: $red;
+        color: #fff;
+    }
+}
+
+.button__cta {
+    padding: 13px 55px;
+}
+
+.button__feature {
+    background: $green3;
+    border: none;
+    color: $white;
+    display: block;
+    font-family: $font3;
+    font-size: 14px;
+    font-weight: 700;
+    height: 45px;
+    line-height: 45px;
+    padding: 0px 17px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include trans(all);
+
+    &:hover {
+        background: $feature;
+    }
+}
+
+.button__feature--2 {
+    background: $highlight;
+    color: #695B5A;
+
+    &:hover {
+        background: $feature;
+    }
+}
+
+.button__feature--3 {
+    background: $green4;
+    color: $green;
+
+    &:hover {
+        background: $green3;
+        color: $green4;
+    }
+}
+
+.button__feature--4 {
+    background: transparent;
+
+    &:hover {
+        background: $red;
+    }
+}
+
+.button__home {
+    display: block;
+    height: 15px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-decoration: none;
+    width: 16px;
+
+    svg {
+        fill: $background;
+        @include trans(fill);
+    }
+
+    &:hover {
+        svg {
+            fill: $highlight;
+        }
+    }
+
+    &.button__home--mobile {
+        line-height: 1;
+        margin-top: 14px;
+    }
+}
+
+.button__large {
+    font-size: 18px;
+}
+
+.content .sharethis-inline-share-buttons {
+    display: inline-block!important;
+    margin: 0 0 40px 20px;
+    text-align: left!important;
+
+    &#st-1 .st-btn {
+        margin-right: 2px!important;
+    }
+}
+
+@include media('small-tablet'){
+    .button__home {
+        margin-right: 25px;
+    }
+
+    .content .sharethis-inline-share-buttons {
+        margin: 0 0 40px 55px;
+    }
+}
+
+@include media('tablet'){
+
+    .content .sharethis-inline-share-buttons {
+        margin: 0 0 70px 105px;
+    }
+}

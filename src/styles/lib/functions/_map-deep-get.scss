@@ -1,0 +1,12 @@
+// Nested maps
+// -------------------------------------
+
+// map-deep-get($map-name, "level-1", "level-2", "level-3");
+// https://gist.github.com/jlong/8760275
+@function map-deep-get($map, $keys...) {
+	$value: $map;
+	@each $key in $keys {
+		$value: map-get($value, $key);
+	}
+	@return $value;
+}

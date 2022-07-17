@@ -1,0 +1,11 @@
+// Sprite
+// -------------------------------------
+
+@mixin sprite($x, $y){
+	background: url('/dist/images/sprites/sprite.png') $x $y no-repeat transparent;
+
+	@include media("hidpi"){
+		background: url('/dist/images/sprites/sprite_2x.png') $x $y no-repeat transparent;
+	    background-size: 254px 480px;
+	}
+}

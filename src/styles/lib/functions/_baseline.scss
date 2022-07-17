@@ -1,0 +1,8 @@
+
+@function baseline($lines, $context: 16, $grid: $baseline) {
+  @return #{($lines*$grid)/$context}em;
+}
+
+// margin-bottom: baseline(5);
+// margin-bottom: baseline(5, 18);
+// margin-bottom: baseline(5, 18, 10);

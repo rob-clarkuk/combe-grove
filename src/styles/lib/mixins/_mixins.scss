@@ -1,0 +1,150 @@
+
+/* mixins */
+@mixin hide {
+	display: none;
+}
+
+@mixin hideText {
+	color: transparent;
+	font: 0/0 a;
+}
+
+@mixin bdrRadius ($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin bgSize {
+	-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+}
+
+@mixin bg_size_half {
+	-o-background-size: 50% auto, auto;
+	-moz-background-size: 50% auto, auto;
+	-webkit-background-size: 50% auto, auto;
+	background-size: 50% auto, auto;
+}
+
+@mixin bgSizeWidth {
+	-o-background-size: 100% auto, auto;
+	-moz-background-size: 100% auto, auto;
+	-webkit-background-size: 100% auto, auto;
+	background-size: 100% auto, auto;
+}
+
+@mixin textShadow ($distance, $transparency, $color) {
+	text-shadow: $distance $distance $transparency $color;
+}
+
+@mixin boxShadow ($distance: 10px, $strength: 5px, $color: #000000) {
+	-moz-box-shadow: $distance $distance $strength $color;
+	-webkit-box-shadow:  $distance $distance $strength $color;
+	box-shadow:  $distance $distance $strength $color;
+}
+
+@mixin boxShadowFull ($distance1: 10px, $distance2: 10px, $strength: 5px, $color: #000000) {
+	-moz-box-shadow: $distance1 $distance2 $strength $color;
+	-webkit-box-shadow:  $distance1 $distance2 $strength $color;
+	box-shadow:  $distance1 $distance2 $strength $color;
+}
+
+@mixin cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin center_image {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+@mixin rotate($deg) {
+  -ms-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin cw {
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+@mixin ccw {
+  -ms-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+@mixin transTime($time) {
+	transition: all $time liner;
+	-moz-transition: all $time linear;
+	-webkit-transition: all $time linear;
+}
+
+@mixin trans($thing) {
+	transition: $thing .5s ease-in-out;
+	-moz-transition: $thing .5s ease-in-out;
+	-webkit-transition: $thing .5s ease-in-out;
+}
+
+@mixin diamond {
+	background: #fff;
+    content: "";
+    display: block;
+    height: 12px;
+    position: absolute;
+    right: -7px;
+    top: 7px;
+    width: 12px;
+	@include rotate(45deg);
+}
+
+@mixin split($color1, $color2){
+	background: $color1; /* Old browsers */
+	background: -moz-linear-gradient(left, $color1 0%, $color1 50%, $color2 51%, $color2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, $color1 0%,$color1 50%,$color2 51%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, $color1 0%,$color1 50%,$color2 51%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin translateY {
+	// left: 0px;
+	// position: absolute;
+	// top: 50%;
+	// width: 100%;
+	-ms-transform: translateY(-50%); /* IE 9 */
+   	-webkit-transform: translateY(-50%); /* Safari */
+    transform: translateY(-50%);
+}
+
+@mixin translateX {
+	// left: 0px;
+	// position: absolute;
+	// top: 50%;
+	// width: 100%;
+	-ms-transform: translateX(-50%); /* IE 9 */
+   	-webkit-transform: translateX(-50%); /* Safari */
+    transform: translateX(-50%);
+}
+
+@mixin translateXY {
+	// left: 0px;
+	// position: absolute;
+	// top: 50%;
+	// width: 100%;
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+   	-webkit-transform: translate(-50%, -50%); /* Safari */
+    transform: translate(-50%, -50%);
+}
