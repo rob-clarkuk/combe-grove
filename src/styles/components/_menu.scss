@@ -1,7 +1,7 @@
 .menu__hamburger {
     color: $background;
     float: left;
-    font-family: $font3;
+    font-family: $font2;
     font-size: 19px;
     font-weight: 700;
     padding: 12px 0 11px 29px;
@@ -50,25 +50,12 @@
     }
 }
 
-
-/* Icons (made with Icomoon.io) */
-
-// @font-face {
-// 	font-family: $font3;
-// 	font-weight: normal;
-// 	font-style: normal;
-// 	src: url('../fonts/feather/feather.eot?1gafuo');
-// 	src: url('../fonts/feather/feather.eot?1gafuo#iefix') format('embedded-opentype'), url('../fonts/feather/feather.woff2?1gafuo') format('woff2'), url('../fonts/feather/feather.ttf?1gafuo') format('truetype'), url('../fonts/feather/feather.woff?1gafuo') format('woff'), url('../fonts/feather/feather.svg?1gafuo#feather') format('svg');
-// }
-
 .icon {
-	//font-family: $font3;
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
 	line-height: 1;
 	text-transform: none;
-	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	speak: none;
@@ -308,7 +295,7 @@
 }
 
 .menu__breadcrumbs a {
-    font-family: $font3;
+    font-family: $font2;
     font-size: 14px;
     font-weight: 700;
 	display: inline-block;
@@ -330,7 +317,7 @@
 
 .menu__breadcrumbs a:not(:last-child)::after {
 	content: '\2022';
-	font-family: $font3;
+	font-family: $font2;
 	display: inline-block;
 	padding: 0 0.5em;
 	color: #747474;
@@ -436,4 +423,64 @@
     .menu {
         display: none;
     }
+}
+
+.menu__book{
+	height:100vh;
+	width:100vw;
+	background-color:$green5;
+	position:fixed;
+	z-index:100000;
+	top:-100vh;
+	transition:top .3s;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	&--close{
+		position:absolute;
+		top:1em;
+		right:1em;
+		font-size:20px;
+		font-family:$font1;
+		text-decoration:none;
+		color:$text4;
+		font-weight:700;
+		transition: color .3s;
+		&:hover{
+			color:$white;
+			transition: color .3s;
+		}
+	}
+	&--content{
+		display:flex;
+		flex-direction:column;
+		grid-gap:1em;
+		text-align:center;
+		color:$text4;
+		font-size:20px;
+		font-family:$font2;
+		text-transform:uppercase;
+		h3{
+			color:$text4;
+			text-transform: none;
+			font-size:42px;
+		}
+		a{
+			color:$text4;
+			text-decoration:none;
+			transition: color .3s;
+			&:hover{
+				color:$white;
+				transition: color .3s;
+			}
+		}
+	}
+}
+
+.bookmenu__active{
+	overflow:hidden;
+	.menu__book{
+		top:0;
+		transition:top .5s;
+	}
 }

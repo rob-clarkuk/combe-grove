@@ -77,7 +77,6 @@
 }
 
 .home__strapline {
-    //background: #B4B6A4 url(../images/paint-stroke-2.png) left 10px / auto 230px no-repeat;
     background: $green2;
     bottom: 0px;
     color: #F7F5F5;
@@ -265,6 +264,7 @@
     .slick-list,
     .slick-track {
         height: calc(100vh - 45px);
+        margin-bottom:75px;
     }
 }
 
@@ -469,4 +469,5 @@
     text-decoration: none;
     width: 200px;
     z-index: 9999;
+    font-size:0;
 }

@@ -1,0 +1,257 @@
+.offCanvas{
+	background-color:$green5;
+	height:100vh;
+	max-height:100vh;
+	width:500px;
+	max-width:45vw;
+	position:fixed;
+	top:0;
+	z-index:99998;
+	left:-100%;
+	transition: left .5s;
+	display:none;
+	align-items:center;
+	font-family:$font2;
+    letter-spacing:1.5px;
+    font-size:18px;
+    &:before{
+    	content:'';
+    	top:0;
+    	left:0;
+    	right:0;
+    	bottom:0;
+		background-color:$green5;
+		position:absolute;
+    }
+	&__menu{
+		display:flex;
+		padding: 1em 5em;
+		flex-direction:column;
+		grid-gap:1em;
+		z-index:1;
+		li{
+			text-transform: uppercase;
+			color:$white;
+		}
+		a{
+			color:$white;
+			text-decoration:none;
+			transition: color .3s;
+			&:hover{
+				color:$green;
+				transition: color .3s;
+			}
+		}
+	}
+	&__subMenu{
+		background-color:$white;
+		height:100vh;
+		max-height:100vh;
+		width:500px;
+		max-width:45vw;
+		position:absolute;
+		left:100%;
+		top:0;
+		z-index:-1;
+		display:flex;
+		align-items:center;
+		background-size:cover;
+		background-position:center;
+		background-repeat:no-repeat;
+		&:before{
+			background-color:$white;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			content:'';
+			opacity:.8;
+			position:absolute;
+		}
+		&--default{
+			background-color:$white;
+			height:100vh;
+			max-height:100vh;
+			width:500px;
+			max-width:45vw;
+			position:absolute;
+			left:100%;
+			top:0;
+			z-index:-1;
+			-webkit-box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.1);
+			box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.1);
+		}
+		&--menu{
+			position:relative;
+			z-index:1;
+			color: $green;
+			a{
+				color:$green;
+			}
+		}
+	}
+}
+
+.offCanvas__active{
+	overflow:hidden;
+	.offCanvas{
+		left:0;
+		transition: left .5s;
+	}
+	.header__menu--icon{
+		&:hover{
+			span{
+				background-color:$text;
+			}
+		}
+        span{
+            &:nth-of-type(1){
+                transform:rotate(45deg) translate(8px, 8px);
+                transition: .3s transform;
+            }
+            &:nth-of-type(2){
+                opacity:0;
+                transition: .3s opacity;
+            }
+            &:nth-of-type(3){
+                transform:rotate(-45deg) translate(7px, -7px);
+                transition: .3s transform;
+            }
+        }
+    }
+}
+
+.offCanvas__mob{
+	position:fixed;
+	height:100vh;
+	width:100vw;
+	background-color:$green5;
+	position:fixed;
+	z-index:99998;
+	top:-100vh;
+	transition:top .3s;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	&--container{
+		max-height:90%;
+		overflow-x:hidden;
+		position:relative;
+		height: 70vh;
+    	width: 100%;
+    	max-width:80%;
+	}
+	&--content{
+		display:flex;
+		flex-direction:column;
+		grid-gap:1em;
+		text-align:center;
+		color:$white;
+		font-size:20px;
+		font-family:$font2;
+		text-transform:uppercase;
+		max-height:75vh;
+		transition:transform .3s;
+		svg{
+			width: 12px;
+			transform:rotate(90deg);
+			path{
+				fill: $white;
+			}
+		}
+		span{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			gap:10px;
+			line-height:28px;
+		}
+		div{
+			span{
+				line-height:45px;
+			}
+		}
+		a{
+			color:$white;
+			text-decoration:none;
+			transition: color .3s;
+			&:hover{
+				color:$white;
+				transition: color .3s;
+			}
+		}
+		&.active{
+			transform:translateX(-100%);
+			transition:transform .3s;
+		}
+	}
+	&--subMenu{
+		position:absolute;
+		top:0;
+		left:0;
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    text-align: center;
+	    font-size:20px;
+		gap:10px;
+		line-height:28px;
+		width:100%;
+		transform:translateX(100%);
+		transition:transform .3s;
+		&.active{
+			transform:translateX(0);
+			transition:transform .3s;
+		}
+		a{
+			color:$white;
+			text-decoration:none;
+			transition: color .3s;
+			&:hover{
+				color:$white;
+				transition: color .3s;
+			}
+		}
+		svg{
+			width: 12px;
+			transform:rotate(-90deg);
+			path{
+				fill: $white;
+			}
+		}
+	}
+}
+
+.offCanvas__active--mob{
+	overflow:hidden;
+	.offCanvas__mob{
+		top:0;
+		transition: top .5s;
+	}
+	.header__menu--icon__mob{
+        span{
+            &:nth-of-type(1){
+                transform:rotate(45deg) translate(7px, 7px);
+                transition: .3s transform;
+            }
+            &:nth-of-type(2){
+                opacity:0;
+                transition: .3s opacity;
+            }
+            &:nth-of-type(3){
+                transform:rotate(-45deg) translate(7px, -7px);
+                transition: .3s transform;
+            }
+        }
+    }
+}
+
+@include media('desktop'){
+    .offCanvas{
+    	display:flex;
+    }
+    .offCanvas__mob{
+		display:none;
+	}
+}

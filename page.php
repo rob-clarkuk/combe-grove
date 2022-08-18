@@ -3,7 +3,7 @@
         <?php include 'includes/banner.php'; ?>
         
         <div class="layout__inner layout__inner--condensed content__padded content__tint content__tint--extended">
-            <h1>
+            <h1 class="page__title">
                 <?php
                     $optional_title = get_field('alternate_page_title');
                     if($optional_title){

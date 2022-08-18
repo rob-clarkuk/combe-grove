@@ -34,30 +34,33 @@ body {
 
 h1,
 h2.fauxH1 {
-	color: $feature;
+	color: $green5;
     font-family: $font1;
 	font-size: 25px;
     font-weight: 500;
 	margin-bottom: 30px;
+    line-height:1.2;
 }
 
 h2,
 h2.h2,
 .fauxH2 {
-	color: $green3;
+	color: $green5;
     font-family: $font1;
 	font-size: 22px;
 	font-weight: 400;
 	margin-bottom: 20px;
+    line-height:1.2;
 }
 
 h3,
 h3.h3 {
-	color: $blue;
+	color: $green5;
 	font-size: 26px;
 	font-weight: 400;
     font-family: $font1;
 	margin-bottom: 5px;
+    line-height:1.2;
 
     a {
         color: $feature;
@@ -73,7 +76,7 @@ h3.h3 {
 
 h4,
 h4.h4 {
-	color: $highlight;
+	color: $green5;
 	font-size: 20px;
 	font-weight: 400;
 	margin-bottom: 10px;
@@ -89,7 +92,6 @@ p {
     color: $text;
     font-family: $font2;
     font-size: 18px;
-    line-height: 1.2;
     margin-bottom: 20px;
 
     a {

@@ -31,6 +31,12 @@
     z-index: 2;
 }
 
+.page{
+    &__title{
+        display:block;
+    }
+}
+
 @include media('mobile'){
     .layout__inner {
         width: 556px;
@@ -64,6 +70,11 @@
 
     .layout__inner--wide {
         width: 90%;
+    }
+    .page{
+        &__title{
+            display:none;
+        }
     }
 }
 

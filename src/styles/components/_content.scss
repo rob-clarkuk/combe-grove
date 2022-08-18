@@ -1,3 +1,14 @@
+
+.single,
+.error404,
+.tag,
+.category,
+.search {
+    .content {
+        padding-top: 100px;
+    }
+}
+
 .content {
     background: $background;
 
@@ -20,7 +31,7 @@
 }
 
 .content__tint {
-    background: $backgroundTint;
+    background: $background;
     padding-top: 30px;
     position: relative;
     z-index: 2;
@@ -29,7 +40,7 @@
 .content__tint--extended {
 
     &:after {
-        background: $backgroundTint;
+        background: $background;
         content: "";
         bottom: -300px;
         left: 0px;
@@ -86,6 +97,16 @@
 }
 
 @include media('tablet'){
+    .single,
+    .error404,
+    .tag,
+    .category,
+    .search {
+        .content {
+            padding-top: 100px;
+        }
+    }
+
     .content__tint {
         padding-top: 45px;
     }
@@ -114,5 +135,17 @@
     .columns-2__image{
         margin-right: 40px;
         width: calc(50% - 20px);
+    }
+}
+
+@include media('desktop'){
+    .single,
+    .error404,
+    .tag,
+    .category,
+    .search {
+        .content {
+            padding-top: 50px;
+        }
     }
 }

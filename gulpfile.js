@@ -15,7 +15,6 @@ const minifyCSS = require('gulp-minify-css');
 const autoprefixer = require('autoprefixer');
 
 // utilities
-const del = require('del');
 const watch = require('gulp-watch');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
@@ -24,10 +23,38 @@ const sourcemaps = require('gulp-sourcemaps');
 // manually for now. 
 const touch = require('gulp-touch-cmd');
 
+// scripts
+const webpack = require('webpack')
+const webpackConfig = require('./webpack.common.js')
+
 /* app
 ------------------------------------------------------------------------------*/
 
 let app = {};
+
+/* js
+------------------------------------------------------------------------------*/
+
+/* js
+------------------------------------------------------------------------------*/
+app.js = {}
+
+app.js.main = function () {
+  return new Promise((resolve, reject) => {
+    webpack(webpackConfig, (err, stats) => {
+      if (err) {
+        return reject(err)
+      }
+      if (stats.hasErrors()) {
+        return reject(new Error(stats.compilation.errors.join('\n')))
+      }
+      resolve()
+    })
+  })
+}
+app.js.main.displayName = 'app:js:main'
+
+app.js.all = gulp.series(gulp.parallel(app.js.main))
 
 /* css
 ------------------------------------------------------------------------------*/
@@ -66,6 +93,7 @@ app.css.all = gulp.series(app.css.normal, app.css.min);
 // watch
 app.watch = function(){
 	gulp.watch(themeFolder + 'src/styles/**/*.scss', app.css.all);
+	gulp.watch(themeFolder + 'src/scripts/**/*.js', app.js.all);
 };
 app.watch.displayName = 'app:watch';
 
@@ -76,6 +104,7 @@ app.all = gulp.series(gulp.parallel(app.watch));
 
 module.exports = {
 	app: app.all,
+	js: app.js.all,
 	css: app.css.all,
 	watch: app.watch,
 	default: app.all

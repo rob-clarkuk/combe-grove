@@ -1,19 +1,19 @@
 .newsletter {
     //background: $background2 url(../images/white-brush-stroke.png) 0 10px / 100% auto no-repeat;
-    background: $background2;
+    background: $green5;
     padding: 30px 0;
     position: relative;
     z-index: 2;
 
     h2 {
-        color: $feature;
+        color: $white;
         font-size: 25px;
         font-weight: 700;
         margin-bottom: 20px;
     }
 
     p {
-        color: $feature;
+        color: $white;
     }
 }
 
@@ -26,7 +26,6 @@
 
 @include media('small-tablet'){
     .newsletter {
-        background: $background2;
         overflow: hidden;
         padding: 10px 0 20px;
     }

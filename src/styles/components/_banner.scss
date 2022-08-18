@@ -23,8 +23,24 @@
         width: 100%;
         z-index: 1;
     }
-}
 
-@include media('tablet'){
-
+    &--title{
+        position:absolute;
+        top:10%;
+        left:10vw;
+        right:10vw;
+        bottom:0;
+        z-index:2;
+        display:none;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        line-height:1.2;
+        color:$white;
+        font-family:$font1;
+        letter-spacing:2;
+        @include media('small-tablet'){
+            display:flex;
+        }
+    }
 }

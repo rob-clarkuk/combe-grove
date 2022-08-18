@@ -17,8 +17,10 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/dist/styles/main.min.css?v=9" />
 
 		<?php // Fonts ?>
-        <link rel="stylesheet" href="https://use.typekit.net/iiw8hvu.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Open+Sans+Condensed:300,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/krq7cno.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
 
 		<?php wp_head(); ?>
 
@@ -126,8 +128,12 @@
 		  }
 		</script>
 
+		<script src="https://kit.fontawesome.com/0e40e5870b.js" crossorigin="anonymous"></script>
+
 
 	</head>
 	<body <?php body_class(); ?>>
 
-		<?php include 'includes/header-content.php'; ?>
+		<?php include 'includes/header-2022.php'; ?>
+		<?php include 'includes/offCanvas.php'; ?>
+		<?php include 'includes/menu-book.php'; ?>

@@ -1,3 +1,5 @@
+import './vendor/slick';
+
 $('.js-carousel').slick({
     dots: false,
     infinite: true,

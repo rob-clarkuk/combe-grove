@@ -1,31 +1,183 @@
 .header {
-    padding-top: 45px;
-    position: relative;
+    position: fixed;
     z-index: 99999;
 
-    .layout__inner {
-        width: 100%;
+    width:100vw;
+    padding:20px;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+
+    color:$white;
+    font-family:$font2;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-size:14px;
+
+    transition:.3s background;
+
+    a{
+        color:$white;
+        text-decoration:none;
+        position:relative;
+        transition: color .3s;
+        &:before{
+            height:1px;
+            width:0px;
+            background-color:$green5;
+            position:absolute;
+            left:0;
+            bottom:0;
+            content:'';
+            transition: width .3s;
+        }
+        &:hover{
+            color: $green5;
+            transition: color .3s;
+            &:before{
+                width:100%;
+                transition: width .3s;
+            }
+        }
     }
 
-    > .layout__inner {
-        position: relative;
-        height: 134px;
-        z-index: 0;
+    &__container{        
+        grid-template-columns: 25% 50% 25%;
+
+        display:grid;
     }
-}
 
-.home .header {
-    height: 45px;
-}
+    &__menu{
+        display:flex;
+        align-items:center;
+        grid-gap:2em;
+        &--icon{
+            height:25px;
+            display:none;
+            flex-direction:column;
+            justify-content:space-between;
+            &:hover{
+                cursor:pointer;
+                span{
+                    background-color:$green5;
+                }
+            }
+            span{
+                display:block;
+                background-color:$white;
+                height:3px;
+                width:35px;
+                border-radius:10px;
+                transition: .3s;
+            }
+            &.active{
+                span{
+                    &:nth-of-type(1){
+                        transform:rotate(45deg) translate(10px, 10px);
+                        transition: .3s transform;
+                    }
+                    &:nth-of-type(2){
+                        opacity:0;
+                        transition: .3s opacity;
+                    }
+                    &:nth-of-type(3){
+                        transform:rotate(-45deg) translate(5px, -5px);
+                        transition: .3s transform;
+                    }
+                }
+            }
+        }
+        &--icon__mob{
+            height:22px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            &:hover{
+                cursor:pointer;
+                span{
+                    background-color:$green5;
+                }
+            }
+            span{
+                display:block;
+                background-color:$white;
+                height:2px;
+                width:35px;
+                border-radius:10px;
+                transition: .3s;
+            }
+            &.active{
+                span{
+                    &:nth-of-type(1){
+                        transform:rotate(45deg) translate(10px, 10px);
+                        transition: .3s transform;
+                    }
+                    &:nth-of-type(2){
+                        opacity:0;
+                        transition: .3s opacity;
+                    }
+                    &:nth-of-type(3){
+                        transform:rotate(-45deg) translate(5px, -5px);
+                        transition: .3s transform;
+                    }
+                }
+            }
+        }
+    }
 
-.header__fixed {
-    background: $green;
-    height: 45px;
-    left: 0px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
+    &__logo{
+        background-image: url(../images/Combe-Grove-Wordmarkx2.png);
+        background-position:center;
+        background-size:contain;
+        background-repeat:no-repeat;
+        height: 65px;
+        width:100%;
+        transition:.3s transform;
+
+        @include hideText;
+
+        &--container{
+            &:hover{
+                &:before{
+                    display:none; 
+                }
+            }
+        }
+    }
+
+    &__search{
+        svg{
+            width:28px;
+            path{
+                fill:$white;
+            }
+        }
+    }
+
+    &__links{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        grid-gap: 3em;
+    }
+
+    &__button{
+        display:block;
+        padding:5px;
+        border-left:1px solid $white;
+        border-right:1px solid $white;
+        border-bottom:1px solid $white;
+        border-top:1px solid $white;
+        &:hover{
+            &:before{
+                display:none;
+            }
+            border-left:1px solid transparent;
+            border-right:1px solid transparent;
+            border-bottom:1px solid $green;
+            border-top:1px solid $green;
+        }
+    }
 }
 
 .header__heading{
@@ -44,11 +196,7 @@
 }
 
 .header__logo {
-    background: url(../images/Combe-Grove-Wordmarkx2.png) 0 0 / 100% auto no-repeat;
-    height: 58px;
-    width: 295px;
-    text-align:center;
-    @include hideText;
+    
 
     .header__logo--link {
         display: block;
@@ -63,11 +211,45 @@
 .category,
 .search {
     .header {
-        background: $background;
+        background: $green5;
+    }
+}
+
+.scrolled .header{
+    background: rgba($green5, 0.9);
+    padding:10px 20px;
+    transition:.3s background, .3s padding;
+
+    &__logo{
+        transform:scale(.7);
+        transition:.3s transform;
     }
 
-    .header__logo {
-        background: url(../images/Combe-Grove-Wordmark-2.svg) 0 0 / 100% auto no-repeat;
+    &__links{
+        a{
+            &:hover{
+                color: $green2;
+            }
+        }
+    }
+}
+
+@include media('mobile'){
+        
+    .header {
+        font-size:18px;
+    }
+
+    .header__logo--container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header__links{
+        padding-right:20px;
+    }
+
+    .header__button{
+        padding:10px;
     }
 }
 
@@ -81,16 +263,29 @@
             height: 114px;
         }
     }
+
+
 }
 
 @include media('tablet-landscape'){
     .header .layout__inner {
         width: 1000px;
     }
+
 }
 
 @include media('desktop'){
     .header .layout__inner {
         width: 1270px;
     }
+
+    .header__menu--icon{
+        display:flex;
+    }
+
+    .header__menu--icon__mob{
+        display:none;
+    }
 }
+
+

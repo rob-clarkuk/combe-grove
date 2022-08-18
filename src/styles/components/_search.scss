@@ -3,10 +3,11 @@
 }
 
 .search__form {
-    background: #414f3b;
-    height: 45px;
+    height: 32px;
     margin-right: 25px;
     position: relative;
+    display:flex;
+    align-items:center;
 
     label {
         display: none;
@@ -17,11 +18,18 @@
     background: transparent;
     border: none;
     color: $background;
-    font-size: 20px;
-    height: 45px;
+    height: 32px;
     outline: none;
-    padding-left: 18px;
-    width: 203px;
+    width: 0px;
+    border-bottom:2px solid $white;
+    margin-right:.5em;
+    opacity:0;
+    transition: opacity .01s, width .3s;
+    &.active{
+       opacity:1; 
+       width: 200px;
+       transition: opacity .01s, width .3s;
+    }
 }
 
 .search__input::-webkit-input-placeholder {color: $background;}
@@ -30,14 +38,8 @@
 .search__input:-moz-placeholder {color: $background;}
 
 .search__submit {
-    background: url(../images/Search-icon.svg) 0 0 / 100% 100% no-repeat;
     border: none;
-    height: 17px;
-    margin-top: -8.5px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    width: 17px;
+    background-color:transparent;
     @include hideText;
 }
 

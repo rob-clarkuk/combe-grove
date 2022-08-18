@@ -11,6 +11,12 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
     acf_add_options_sub_page(array(
+        'page_title'    => 'Menu',
+        'menu_title'    => 'Menu',
+        'parent_slug'   => 'website-general-settings',
+    ));
+
+    acf_add_options_sub_page(array(
         'page_title'    => 'Menu Constructor',
         'menu_title'    => 'Menu Constructor',
         'parent_slug'   => 'website-general-settings',
