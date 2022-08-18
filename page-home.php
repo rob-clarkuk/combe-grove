@@ -67,30 +67,28 @@
         <a href="" class="home__down-arrow js__home-scroll"></a>
     </section>
 
-	<section class="module--2-cols">
-		<div class="layout__inner">
-			<?php
-                if( have_rows('2_column_content') ):
-                    while ( have_rows('2_column_content') ) : the_row();
-                        echo '
-                            <div class="columns-2__row">
-								<img src="' . get_sub_field('image') . '" alt="' . get_sub_field('image_alt_text') . '" class="columns-2__image" />
-                                <div class="columns-2__content">
-                                    <h2>' . get_sub_field('title') . '</h2>
-									' . get_sub_field('content');
+	<section class="grid">
+		<?php
+            if( have_rows('2_column_content') ):
+                while ( have_rows('2_column_content') ) : the_row();
+                    echo '
+                        <div class="grid--2col">
+							<img src="' . get_sub_field('image') . '" alt="' . get_sub_field('image_alt_text') . '" class="grid--2col__image" />
+                            <div class="grid--2col__content">
+                                <h2>' . get_sub_field('title') . '</h2>
+								' . get_sub_field('content');
 
-									$button_text = get_sub_field('button_text');
-									if($button_text != ""){
-                                    	echo '<a href="'. get_sub_field('button_url') .'" class="button">'. get_sub_field('button_text') .'</a>';
-									}
-                                echo '</div>
-                            </div>
-                        ';
+								$button_text = get_sub_field('button_text');
+								if($button_text != ""){
+                                	echo '<a href="'. get_sub_field('button_url') .'" class="button">'. get_sub_field('button_text') .'</a>';
+								}
+                            echo '</div>
+                        </div>
+                    ';
 
-                    endwhile;
-                endif;
-            ?>
-		</div>
+                endwhile;
+            endif;
+        ?>
 	</section>
 
     <section class="content js__scroll-target">

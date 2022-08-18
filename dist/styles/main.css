@@ -1373,6 +1373,28 @@ p.text__feature--green {
 .page__title {
   display: block; }
 
+.grid {
+  width: 90vw;
+  max-width: 1200px;
+  margin: auto; }
+  .grid--2col {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    margin-bottom: 3em; }
+    @media only screen and (min-width: 800px) {
+      .grid--2col {
+        grid-template-columns: repeat(2, 1fr); } }
+    .grid--2col__image {
+      max-width: 100%; }
+    @media only screen and (min-width: 800px) {
+      .grid--2col:nth-of-type(2n) .grid--2col__image {
+        grid-column: 2/3;
+        grid-row: start; }
+      .grid--2col:nth-of-type(2n) .grid--2col__content {
+        grid-column: 1/2;
+        grid-row: start; } }
+
 @media only screen and (min-width: 650px) {
   .layout__inner {
     width: 556px; }
