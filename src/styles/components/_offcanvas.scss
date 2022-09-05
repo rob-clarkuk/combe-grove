@@ -85,8 +85,14 @@
 			position:relative;
 			z-index:1;
 			color: $green;
+			transition:color .3s;
 			a{
 				color:$green;
+				transition:color .3s;
+				&:hover{
+					color:$green5;
+					transition:color .3s;
+				}
 			}
 		}
 	}
@@ -247,7 +253,7 @@
     }
 }
 
-@include media('desktop'){
+@include media('small-laptop'){
     .offCanvas{
     	display:flex;
     }

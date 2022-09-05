@@ -51,6 +51,7 @@
         display:flex;
         align-items:center;
         grid-gap:2em;
+        gap:2em;
         &--icon{
             height:25px;
             display:none;
@@ -159,6 +160,7 @@
         justify-content:flex-end;
         align-items:center;
         grid-gap: 3em;
+        gap:3em;
     }
 
     &__button{
@@ -274,7 +276,7 @@
 
 }
 
-@include media('desktop'){
+@include media('small-laptop'){
     .header .layout__inner {
         width: 1270px;
     }

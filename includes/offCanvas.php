@@ -2,8 +2,8 @@
 	<?php if( have_rows('link', 'option') ): ?>
 	    <ul class="offCanvas__menu">
 		    <?php while( have_rows('link', 'option') ): the_row(); ?>
-		        <li data-menu="offCanvas__menu--<?php echo get_row_index(); ?>" class="offCanvas__menu--item">
-		            <a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('title'); ?></a>
+		        <li>
+		            <a href="<?php the_sub_field('link'); ?>" data-menu="offCanvas__menu--<?php echo get_row_index(); ?>" class="offCanvas__menu--item"><?php the_sub_field('title'); ?></a>
 		        </li>
 		    <?php endwhile; ?>
 	    </ul>

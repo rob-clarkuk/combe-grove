@@ -1263,7 +1263,7 @@ p {
   margin-bottom: 10px; }
   .type__content ul li {
     color: #747474;
-    font-family: cormorant-garamond, serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 10px;
@@ -1748,8 +1748,7 @@ p.text__feature--green {
   .single .content,
   .error404 .content,
   .tag .content,
-  .category .content,
-  .search .content {
+  .category .content {
     padding-top: 50px; } }
 
 .eventbrite-ticket-embed {
@@ -2298,7 +2297,8 @@ li.gfield {
   .header__menu {
     display: flex;
     align-items: center;
-    grid-gap: 2em; }
+    grid-gap: 2em;
+    gap: 2em; }
     .header__menu--icon {
       height: 25px;
       display: none;
@@ -2369,7 +2369,8 @@ li.gfield {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    grid-gap: 3em; }
+    grid-gap: 3em;
+    gap: 3em; }
   .header__button {
     display: block;
     padding: 5px;
@@ -2440,7 +2441,7 @@ li.gfield {
   .header .layout__inner {
     width: 1000px; } }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1240px) {
   .header .layout__inner {
     width: 1270px; }
   .header__menu--icon {
@@ -3513,9 +3514,14 @@ li.gfield {
     .offCanvas__subMenu--menu {
       position: relative;
       z-index: 1;
-      color: #263A1F; }
+      color: #263A1F;
+      transition: color .3s; }
       .offCanvas__subMenu--menu a {
-        color: #263A1F; }
+        color: #263A1F;
+        transition: color .3s; }
+        .offCanvas__subMenu--menu a:hover {
+          color: #8D9288;
+          transition: color .3s; }
 
 .offCanvas__active {
   overflow: hidden; }
@@ -3633,7 +3639,7 @@ li.gfield {
     transform: rotate(-45deg) translate(7px, -7px);
     transition: .3s transform; }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1240px) {
   .offCanvas {
     display: flex; }
   .offCanvas__mob {
@@ -3989,40 +3995,28 @@ form.search__form--news {
   margin-bottom: 10px; }
 
 .social {
-  height: 17.39px;
-  overflow: hidden; }
+  height: 15px; }
 
 .social__item {
   float: left;
   margin-bottom: 0px;
-  margin-right: 30px; }
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .social__item a {
     display: block;
     height: 100%;
     width: 100%; }
-    .social__item a svg path {
-      fill: #263A1F;
-      transition: fill 0.5s ease-in-out;
-      -moz-transition: fill 0.5s ease-in-out;
-      -webkit-transition: fill 0.5s ease-in-out; }
+    .social__item a svg {
+      height: 15px; }
+      .social__item a svg path {
+        fill: #263A1F;
+        transition: fill 0.5s ease-in-out;
+        -moz-transition: fill 0.5s ease-in-out;
+        -webkit-transition: fill 0.5s ease-in-out; }
     .social__item a:hover svg path {
       fill: #D4BA82; }
-
-.social__item--facebook {
-  height: 17.39px;
-  width: 8px; }
-
-.social__item--twitter {
-  height: 13.39px;
-  width: 16.48px; }
-  .social__item--twitter svg {
-    margin-top: 4px; }
-
-.social__item--instagram {
-  height: 15px;
-  width: 15.14px; }
-  .social__item--instagram svg {
-    margin-top: 2px; }
 
 .social__wrapper--header {
   padding-top: 11px; }
@@ -4046,7 +4040,7 @@ form.search__form--news {
 
 @media only screen and (min-width: 750px) {
   .social__wrapper--footer {
-    margin-top: 97px;
+    margin-top: 92px;
     clear: none;
     margin-bottom: 0px; } }
 
