@@ -3,7 +3,11 @@
 	    <ul class="offCanvas__menu">
 		    <?php while( have_rows('link', 'option') ): the_row(); ?>
 		        <li>
-		            <a href="<?php the_sub_field('link'); ?>" data-menu="offCanvas__menu--<?php echo get_row_index(); ?>" class="offCanvas__menu--item"><?php the_sub_field('title'); ?></a>
+		        	<?php if (get_sub_field('link')): ?>
+		            	<a href="<?php the_sub_field('link'); ?>" data-menu="offCanvas__menu--<?php echo get_row_index(); ?>" class="offCanvas__menu--item"><?php the_sub_field('title'); ?></a>
+		            <?php else :?>
+		            	<span data-menu="offCanvas__menu--<?php echo get_row_index(); ?>" class="offCanvas__menu--item"><?php the_sub_field('title'); ?></span>
+		            <?php endif ;?>
 		        </li>
 		    <?php endwhile; ?>
 	    </ul>

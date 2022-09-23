@@ -42,6 +42,13 @@
 				transition: color .3s;
 			}
 		}
+		&--item{
+			&:hover{
+				cursor:pointer;
+				color:$green;
+				transition: color .3s;
+			}
+		}
 	}
 	&__subMenu{
 		background-color:$white;
