@@ -64,6 +64,10 @@
 
                 echo '<div class="layout__inner content__padded layout__inner--condensed layout--higher type__content">' . get_sub_field('content_block') . '</div>';
 
+            } elseif($content_type == "accord"){
+
+                get_template_part( 'includes/blocks/block', 'accordion' );
+
             } elseif($content_type == "cta"){
 
                 if( have_rows('call_to_action') ):

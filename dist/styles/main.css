@@ -1449,6 +1449,25 @@ p.text__feature--green {
 
 /* Component
    ------------------------------- */
+.accordion__title {
+  border: 1px solid #DDDDDD;
+  padding: 10px 1em;
+  font-family: cormorant-garamond, serif;
+  font-size: 1.2em;
+  transition: .3s; }
+  .accordion__title:hover {
+    background-color: #8D9288;
+    color: #f9f9ed;
+    cursor: pointer;
+    transition: .3s; }
+
+.accordion__content {
+  border: 1px solid #DDDDDD;
+  border-top: 0;
+  padding: 10px 1em;
+  margin-bottom: 2em;
+  display: none; }
+
 .banner__top {
   max-height: 560px;
   overflow: hidden;

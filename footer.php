@@ -14,6 +14,7 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/dist/scripts/search.min.js?v=<?php echo time();?>"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/dist/scripts/scroll-to-top.min.js?v=<?php echo time();?>"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/dist/scripts/team.min.js?v=<?php echo time();?>"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/dist/scripts/accordion.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/menu-mobile.js"></script>
 
 		<script>

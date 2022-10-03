@@ -13,6 +13,7 @@ module.exports = {
   },
   devtool: "source-map", // Create seperate source-map files
   entry: {
+    'accordion': "./src/scripts/accordion.js",
     'carousels': "./src/scripts/carousels.js",
     'classie': "./src/scripts/_classie.js",
     'events': "./src/scripts/events.js",

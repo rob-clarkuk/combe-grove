@@ -1,0 +1,22 @@
+.accordion{
+	&__title{
+		border:1px solid $border;
+		padding: 10px 1em;
+		font-family:$font1;
+		font-size:1.2em;
+		transition: .3s;
+		&:hover{
+			background-color:$green5;
+			color:$white;
+			cursor:pointer;
+			transition: .3s;
+		}
+	}
+	&__content{
+		border:1px solid $border;
+		border-top:0;
+		padding: 10px 1em;
+		margin-bottom:2em;
+		display:none;
+	}
+}
