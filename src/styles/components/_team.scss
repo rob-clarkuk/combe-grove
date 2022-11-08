@@ -1,97 +1,192 @@
-.team__wrapper {
-    clear: both;
-    overflow: hidden;
-}
+.team{
+    &__wrapper {
+        clear: both;
+        overflow: hidden;
 
-.team__item {
-    background: #fff;
-    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
-    margin-bottom: 20px;
-    overflow: hidden;
-    width: 100%;
+        width:1600px;
+        max-width:90vw;
+        margin: auto;
 
-    img {
-        display: block;
-        float: left;
-        width: 50%;
+        text-align: center;
     }
+    &__description{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: auto;
+        max-width: 800px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
 
-    &:hover,
-    &.open {
-        .team__item__inner:after {
-            transform: rotate(90deg);
+        padding-bottom:50px;
+    }
+    &__list{
+        text-align: left;
+    }
+    img{
+        max-width:100%;
+        height:auto;
+    }
+    &__item{
+        &--image{
+            overflow:hidden;
+            line-height:0;
+            img{
+                transition:.3s transform;
+            }
+        }
+        &__content{
+            &--title{
+                transition:color .3s;
+            }
+            &--name{
+                transition:color .3s;
+
+                padding-top:.5em;
+                line-height:1;
+            }
+        }
+        &:hover{
+            cursor:pointer;
+            .team__item--image img{
+                transform: scale(1.05);
+                transition:.3s transform;
+            }
+            .team__item__content{
+                &--title{
+                    color:$green;
+                    transition:color .3s;
+                }
+                &--name{
+                    color:$green;
+                    transition:color .3s;
+                }
+            }
+        }
+        &--popout{
+            position:fixed;
+            top:0;
+            right:-100%;
+            width:100%;
+            height:100vh;
+            max-height:100vh;
+            z-index:99999;
+            transition: right .3s;
+            display: flex;
+            justify-content: flex-end;
+            &.active{
+                right:0%;
+                transition: right .3s;
+            }
+            &__bg{
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                z-index:-1;
+            }
+            &--container{
+                width:1920px;
+                max-width:75vw;
+                height:100vh;
+                max-height:100vh;
+                background-color:$white;
+                -webkit-box-shadow: -3px 0px 10px 0px rgba(0,0,0,0.1);
+                -moz-box-shadow: -3px 0px 10px 0px rgba(0,0,0,0.1);
+                box-shadow: -3px 0px 10px 0px rgba(0,0,0,0.1);
+                overflow-y: auto;
+            }
+            &--close{
+                position:absolute;
+                right:1em;
+                top:1em;
+                svg{
+                    width:32px;
+                    max-width:32px;
+                    path{
+                        fill:$text;
+                        transition: .3s fill;
+                    }
+                }
+                &:hover{
+                    cursor:pointer;
+                    svg{
+                        path{
+                            fill: $green3;
+                            transition: .3s fill;
+                        }
+                    }
+                }
+            }
+            &--content{
+                padding:2em;
+                display:grid;
+                grid-template-columns: 100%;
+                grid-gap:3em;
+                &__social{
+                    &--item{
+                        display:flex;
+                        align-items:center;
+                        gap:10px;
+                        padding:1em 0;
+                        &:hover{
+                           a{
+                                color: $green5;
+                                transition: .3s color;
+                            }
+                            svg{
+                                path{
+                                    fill:$green5;
+                                    transition: .3s fill;
+                                }
+                            } 
+                        }
+                    }
+                    a{
+                        text-decoration:none;
+                        color: $green;
+                        transition: .3s color;
+                    }
+                    svg{
+                        width:32px;
+                        max-width:32px;
+                        path{
+                            fill:$green;
+                            transition: .3s fill;
+                        }
+                    }
+                }
+            }
         }
     }
-}
-
-.team__item__inner {
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-
-    &:after {
-        background: url(../images/croos.svg) 0 0 / 100% auto no-repeat;
-        bottom: 15px;
-        content: "";
-        height: 30px;
-        position: absolute;
-        right: 15px;
-        transform: rotate(-45deg);
-        width: 30px;
-        @include trans(transform);
-    }
-}
-
-.team__item__content {
-    float: left;
-    padding: 15px;
-    width: 50%;
-
-    h3 {
-        color: $feature;
-        font-family: $font2;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    h4 {
-        color: $red;
-        font-family: $font2;
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-    &.team__item__content--wide {
-        width: 100%;
-    }
-}
-
-.team__item__biography {
-    clear: both;
-    display: none;
-    padding: 15px;
 }
 
 @include media('tablet'){
-    .team__item {
-        float: left;
-        margin-right: 14px;
-        width: calc(50% - 7px);
-
-        &:nth-of-type(2n){
-            margin-right: 0px;
-        }
-
-        &:nth-of-type(2n+1){
-            clear: both;
+    .team{
+        &__item{
+            &--popout{
+                &--content{
+                    padding:3em 5em;
+                }
+            }
         }
     }
 }
 
 @include media('tablet-landscape'){
-    .team__item__content,
-    .team__item__biography {
-        padding: 20px;
+    .team{
+        &__list{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__item{
+            &--popout{
+                &--content{
+                    grid-template-columns: 33% 66%;
+                }
+            }
+        }
     }
 }

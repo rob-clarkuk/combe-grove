@@ -106,6 +106,39 @@ p {
     }
 }
 
+.font{
+    &__xl{
+        font-size: 32px;
+        @include media('tablet'){
+            font-size: 42px;
+        }
+    }
+    &__lg{
+        font-size: 24px;
+        @include media('tablet'){
+            font-size: 32px;
+        }
+    }
+    &__md{
+        font-size: 18px;
+        @include media('tablet'){
+            font-size: 20px;
+        }
+    }
+    &__sm{
+
+    }
+    &__xs{
+
+    }
+}
+
+.text{
+    &__uppercase{
+        text-transform: uppercase;
+    }
+}
+
 .type__content ul {
     display: inline-block;
     margin-bottom: 10px;
