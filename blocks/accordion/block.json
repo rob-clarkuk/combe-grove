@@ -1,0 +1,14 @@
+{
+    "name": "acf/content",
+    "title": "Content",
+    "description": "Combe Grove accordion block.",
+    "style": [ "file:./accordion.css" ],
+    "category": "Combe Grove Custom Fields",
+    "icon": "editor-kitchensink",
+    "keywords": ["content", "accordion"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}

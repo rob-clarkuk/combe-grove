@@ -1,0 +1,55 @@
+{
+    "key": "group_5b99afc78216c",
+    "title": "Alternate Title",
+    "fields": [
+        {
+            "key": "field_5b99afcd0ff71",
+            "label": "Alternate page title",
+            "name": "alternate_page_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This title will be used on the page instead of the main title, if filled in.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "page-home.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "page-custom.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1669135376
+}

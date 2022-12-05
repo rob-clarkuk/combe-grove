@@ -28,6 +28,14 @@
     }
 }
 
+.gallery{
+    margin: auto;
+    max-width:90vw;
+    &__extended{
+        width: 1600px;
+    }
+}
+
 @include media('mobile'){
     .gallery__item {
         margin-right: 10.5px;

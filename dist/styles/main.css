@@ -1365,6 +1365,9 @@ p.text__feature--green {
 @import "sprites/sprite"; */
 /* Layouts
    ------------------------------- */
+html :where(.wp-block) {
+  max-width: none; }
+
 .site-wrapper {
   overflow: hidden; }
 
@@ -1470,24 +1473,27 @@ p.text__feature--green {
 
 /* Component
    ------------------------------- */
-.accordion__title {
-  border: 1px solid #DDDDDD;
-  padding: 10px 1em;
-  font-family: cormorant-garamond, serif;
-  font-size: 1.2em;
-  transition: .3s; }
-  .accordion__title:hover {
-    background-color: #8D9288;
-    color: #f9f9ed;
-    cursor: pointer;
+.accordion {
+  width: 1400px;
+  margin: auto;
+  max-width: 90vw; }
+  .accordion__title {
+    border: 1px solid #DDDDDD;
+    padding: 10px 1em;
+    font-family: cormorant-garamond, serif;
+    font-size: 1.2em;
     transition: .3s; }
-
-.accordion__content {
-  border: 1px solid #DDDDDD;
-  border-top: 0;
-  padding: 10px 1em;
-  margin-bottom: 2em;
-  display: none; }
+    .accordion__title:hover {
+      background-color: #8D9288;
+      color: #f9f9ed;
+      cursor: pointer;
+      transition: .3s; }
+  .accordion__content {
+    border: 1px solid #DDDDDD;
+    border-top: 0;
+    padding: 10px 1em;
+    margin-bottom: 2em;
+    display: none; }
 
 .banner__top {
   max-height: 560px;
@@ -1697,8 +1703,12 @@ p.text__feature--green {
 .search .content {
   padding-top: 100px; }
 
-.content {
-  background: #fff; }
+.content__container {
+  margin: auto;
+  width: 1600px;
+  max-width: 90vw; }
+  .content__container--small {
+    width: 1000px; }
 
 .content__centered {
   text-align: center; }
@@ -2273,6 +2283,12 @@ li.gfield {
     width: 100%; }
   .gallery__item:nth-of-type(even) {
     margin-left: 10px; }
+
+.gallery {
+  margin: auto;
+  max-width: 90vw; }
+  .gallery__extended {
+    width: 1600px; }
 
 @media only screen and (min-width: 650px) {
   .gallery__item {
@@ -4167,6 +4183,22 @@ form.search__form--news {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.video {
+  max-width: 90vw;
+  width: 1280px;
+  margin: auto; }
+  .video__container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; }
+    .video__container iframe {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute; }
 
 /* Dropdown control */
 form.select-wrap {

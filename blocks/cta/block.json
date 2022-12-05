@@ -1,0 +1,14 @@
+{
+    "name": "acf/content",
+    "title": "Call To Action",
+    "description": "Combe Grove gallery block.",
+    "style": [ "file:./cta.css" ],
+    "category": "Combe Grove Custom Fields",
+    "icon": "admin-links",
+    "keywords": ["button", "cta"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}

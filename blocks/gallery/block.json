@@ -1,0 +1,14 @@
+{
+    "name": "acf/content",
+    "title": "Gallery",
+    "description": "Combe Grove gallery block.",
+    "style": [ "file:./gallery.css" ],
+    "category": "Combe Grove Custom Fields",
+    "icon": "gallery",
+    "keywords": ["image", "gallery"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}

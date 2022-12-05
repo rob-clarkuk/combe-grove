@@ -1,3 +1,7 @@
+html :where(.wp-block){
+    max-width:none;
+}
+
 .site-wrapper{
     overflow: hidden;
 }

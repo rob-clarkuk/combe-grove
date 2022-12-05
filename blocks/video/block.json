@@ -1,0 +1,14 @@
+{
+    "name": "acf/content",
+    "title": "Video",
+    "description": "Combe Grove video block.",
+    "style": [ "file:./video.css" ],
+    "category": "Combe Grove Custom Fields",
+    "icon": "format-video",
+    "keywords": ["video", "youtube"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}

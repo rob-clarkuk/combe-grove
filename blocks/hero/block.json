@@ -1,0 +1,14 @@
+{
+    "name": "acf/content",
+    "title": "Hero",
+    "description": "Combe Grove hero block.",
+    "style": [ "file:./hero.css" ],
+    "category": "Combe Grove Custom Fields",
+    "icon": "superhero-alt",
+    "keywords": ["image", "hero", "title"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}

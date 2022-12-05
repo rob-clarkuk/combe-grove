@@ -1,4 +1,7 @@
 .accordion{
+	width:1400px;
+	margin:auto;
+	max-width:90vw;
 	&__title{
 		border:1px solid $border;
 		padding: 10px 1em;

@@ -10,10 +10,13 @@
 }
 
 .content {
-    background: $background;
-
-    p {
-
+    &__container{
+        margin:auto;
+        width:1600px;
+        max-width:90vw;
+        &--small{
+            width:1000px;
+        }
     }
 }
 

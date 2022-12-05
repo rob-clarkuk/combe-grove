@@ -1,0 +1,14 @@
+{
+    "name": "acf/content",
+    "title": "Promo",
+    "description": "Combe Grove promo block.",
+    "style": [ "file:./promo.css" ],
+    "category": "Combe Grove Custom Fields",
+    "icon": "cover-image",
+    "keywords": ["image", "promo"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}
