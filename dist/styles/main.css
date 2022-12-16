@@ -1471,6 +1471,18 @@ html :where(.wp-block) {
   .layout__inner--wide {
     width: 90%; } }
 
+.customPage .wp-block-columns {
+  max-width: 90vw;
+  width: 1600px;
+  margin: auto;
+  padding-bottom: 50px; }
+
+.customPage > p, .customPage > h1, .customPage > h2, .customPage > h3, .customPage > h4, .customPage > h5, .customPage > h6, .customPage > ul, .customPage > ol, .customPage > blockquote, .customPage > figure {
+  max-width: 90vw;
+  width: 1600px;
+  margin: auto;
+  padding-bottom: 50px; }
+
 /* Component
    ------------------------------- */
 .accordion {

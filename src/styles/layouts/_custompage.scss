@@ -1,0 +1,15 @@
+.customPage{
+	.wp-block-columns{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	> p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > blockquote, > figure{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+}
+

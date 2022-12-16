@@ -2,7 +2,7 @@
     // Template name: Custom page
     get_header();
 ?>
-    <section class="content">
+    <section class="content customPage">
 
         <?php the_content(); ?>
         
