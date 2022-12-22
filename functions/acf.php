@@ -72,5 +72,6 @@ require get_template_directory() . '/blocks/content/init.php';
 require get_template_directory() . '/blocks/cta/init.php';
 require get_template_directory() . '/blocks/gallery/init.php';
 require get_template_directory() . '/blocks/hero/init.php';
+require get_template_directory() . '/blocks/mindbody/init.php';
 require get_template_directory() . '/blocks/promo/init.php';
 require get_template_directory() . '/blocks/video/init.php';

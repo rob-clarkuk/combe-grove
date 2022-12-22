@@ -1,0 +1,14 @@
+{
+    "name": "acf/content",
+    "title": "Mindbody Widgets",
+    "description": "Combe Grove Mindbody widget block.",
+    "style": [ "file:./mindbody.css" ],
+    "category": "Combe Grove Custom Fields",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["mindbody", "forms"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "align": "full"
+}
