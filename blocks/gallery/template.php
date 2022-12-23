@@ -40,7 +40,7 @@ $style  = implode( '; ', $styles );
 ?>
 <div <?php echo $anchor; ?>class="<?php echo esc_attr( $class_name ); ?>" style="<?php echo esc_attr( $style ); ?>">
 	<div class="gallery__container layout--higher gallery__layout--<?php echo esc_html($columns);?>">
-        <div class="layout__inner content__padded layout__inner--condensed">
+        <div>
         <?php if($title){ ;?>
             <h3><?php echo esc_html($title);?></h3>
         <?php }
@@ -78,6 +78,6 @@ $style  = implode( '; ', $styles );
             <?php endif;?>
 
         </div>
-    </div>';
+    </div>
 
 </div>

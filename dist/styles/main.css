@@ -1477,7 +1477,7 @@ html :where(.wp-block) {
   margin: auto;
   padding-bottom: 50px; }
 
-.customPage > p, .customPage > h1, .customPage > h2, .customPage > h3, .customPage > h4, .customPage > h5, .customPage > h6, .customPage > ul, .customPage > ol, .customPage > blockquote, .customPage > figure {
+.customPage > p, .customPage > h1, .customPage > h2, .customPage > h3, .customPage > h4, .customPage > h5, .customPage > h6, .customPage > ul, .customPage > ol, .customPage > blockquote, .customPage > figure, .customPage > pre {
   max-width: 90vw;
   width: 1600px;
   margin: auto;
@@ -1488,6 +1488,50 @@ html :where(.wp-block) {
   width: 1600px;
   margin: auto !important;
   padding-bottom: 50px !important; }
+
+.customPage .gravity-theme {
+  max-width: 90vw;
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px; }
+
+.customPage .tribe-mini-calendar-block {
+  max-width: 90vw;
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px; }
+
+.customPage .gallery-block {
+  max-width: 90vw;
+  width: 1600px;
+  margin: auto;
+  padding-bottom: 50px; }
+  .customPage .gallery-block .content__padded {
+    padding-left: 0;
+    padding-right: 0; }
+  .customPage .gallery-block .layout__inner {
+    width: 100%; }
+
+.customPage .wp-block-pb-accordion-item {
+  max-width: 90vw;
+  width: 1600px;
+  margin: auto; }
+
+.customPage .wp-block-cover {
+  margin-bottom: 50px; }
+
+.customPage .wp-block-media-text {
+  max-width: 90vw;
+  width: 1600px;
+  margin: auto;
+  padding-bottom: 50px; }
+
+.customPage .wp-block-group {
+  margin-bottom: 50px; }
+  .customPage .wp-block-group .wp-block-cover__inner-container {
+    max-width: 90vw;
+    width: 1600px;
+    margin: auto; }
 
 /* Component
    ------------------------------- */

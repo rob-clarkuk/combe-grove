@@ -5,7 +5,7 @@
 		margin:auto;
 		padding-bottom:50px;
 	}
-	> p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > blockquote, > figure{
+	> p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > blockquote, > figure, > pre{
 		max-width:90vw;
 		width:1600px;
 		margin:auto;
@@ -16,6 +16,53 @@
 		width:1600px;
 		margin:auto !important;
 		padding-bottom:50px !important;
+	}
+	.gravity-theme{
+		max-width:90vw;
+		width:1000px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	.tribe-mini-calendar-block{
+		max-width:90vw;
+		width:1000px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	.gallery-block{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+		.content__padded{
+			padding-left:0;
+			padding-right:0;
+		}
+		.layout__inner{
+			width:100%;
+		}
+	}
+	.wp-block-pb-accordion-item{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+	}
+	.wp-block-cover{
+		margin-bottom:50px;
+	}
+	.wp-block-media-text{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	.wp-block-group{
+		margin-bottom:50px;
+		.wp-block-cover__inner-container{
+			max-width:90vw;
+			width:1600px;
+			margin:auto;
+		}
 	}
 }
 
