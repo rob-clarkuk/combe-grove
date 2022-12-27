@@ -1,9 +1,12 @@
 .customPage{
-	.wp-block-columns{
+	> div > div, > div > form, > div > table{
 		max-width:90vw;
 		width:1600px;
-		margin:auto;
-		padding-bottom:50px;
+		margin:auto !important;
+		padding-bottom:50px !important;
+		.layout__inner{
+			width:100%;
+		}
 	}
 	> p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > blockquote, > figure, > pre{
 		max-width:90vw;
@@ -11,58 +14,54 @@
 		margin:auto;
 		padding-bottom:50px;
 	}
-	.plethoraplugins-tabs-container{
-		max-width:90vw;
-		width:1600px;
-		margin:auto !important;
-		padding-bottom:50px !important;
-	}
-	.gravity-theme{
-		max-width:90vw;
-		width:1000px;
-		margin:auto;
-		padding-bottom:50px;
-	}
-	.tribe-mini-calendar-block{
-		max-width:90vw;
-		width:1000px;
-		margin:auto;
-		padding-bottom:50px;
-	}
-	.gallery-block{
+	.wp-block-columns{
 		max-width:90vw;
 		width:1600px;
 		margin:auto;
 		padding-bottom:50px;
-		.content__padded{
-			padding-left:0;
-			padding-right:0;
-		}
-		.layout__inner{
-			width:100%;
-		}
 	}
 	.wp-block-pb-accordion-item{
 		max-width:90vw;
 		width:1600px;
-		margin:auto;
+		margin:auto !important;
 	}
-	.wp-block-cover{
-		margin-bottom:50px;
-	}
-	.wp-block-media-text{
+	.alignwide{
 		max-width:90vw;
 		width:1600px;
 		margin:auto;
 		padding-bottom:50px;
 	}
-	.wp-block-group{
-		margin-bottom:50px;
-		.wp-block-cover__inner-container{
-			max-width:90vw;
-			width:1600px;
-			margin:auto;
-		}
+	hr.is-style-default{
+		max-width:150px;
+		margin:auto;
 	}
+	.wp-block-media-text__content{
+		width:100%;
+	}
+	.yoast-breadcrumbs{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	.wp-block-yoast-how-to-block{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	.wp-block-latest-comments{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	.wp-block-search{
+		max-width:90vw;
+		width:1600px;
+		margin:auto;
+		padding-bottom:50px;
+	}
+	
 }
 
