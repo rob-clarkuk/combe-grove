@@ -1533,6 +1533,18 @@ html :where(.wp-block) {
   margin: auto;
   padding-bottom: 50px; }
 
+.customPage .banner__top {
+  width: 100%;
+  max-width: none; }
+
+.customPage .wp-block-cover__inner-container {
+  width: 1600px; }
+
+.customPage .tribe-mini-calendar-block {
+  margin: auto; }
+  .customPage .tribe-mini-calendar-block .widget_tribe-widget-events-month, .customPage .tribe-mini-calendar-block .tribe-common {
+    width: 100%; }
+
 /* Component
    ------------------------------- */
 .accordion {
